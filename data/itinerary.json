@@ -1,0 +1,377 @@
+{
+  "note": "Distances and drive times are estimates. Fixed events come from the bookings; everything under 'blocks' is a suggestion, nothing is pre-booked, and the point is to decide most of it on the day.",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-08-31",
+      "weekday": "Montag",
+      "base": "Rostock",
+      "title": "Anreise",
+      "subtitle": "Leipzig to the coast by regional train",
+      "car": false,
+      "driveKm": 0,
+      "fixed": [
+        {
+          "time": "09:22",
+          "type": "train",
+          "label": "Leipzig Hbf (tief) → Rostock Hbf",
+          "detail": "S2 · RE3 · RE5 — 6h 01m, two changes. Arrive 15:23."
+        },
+        {
+          "time": "15:00",
+          "type": "checkin",
+          "label": "IntercityHotel Rostock",
+          "detail": "Window 15:00 – 00:00. The hotel is beside the station."
+        }
+      ],
+      "blocks": [
+        {
+          "label": "Provisions for the train",
+          "text": "Six hours of regional trains with no dining car. Sort this out in Leipzig, not at Gesundbrunnen."
+        },
+        {
+          "label": "Rostock Altstadt",
+          "text": "Neuer Markt and the gabled houses, the Rathaus, Kröpeliner Straße, and St. Marien if it is still open."
+        },
+        {
+          "label": "Stadthafen",
+          "text": "Walk down to the water for the first beer of the trip. This is also where we collect the car tomorrow — worth seeing it in daylight."
+        }
+      ],
+      "tips": [
+        "No car today, so nothing needs parking and neither of us has to stay sober."
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-09-01",
+      "weekday": "Dienstag",
+      "base": "Zingst",
+      "title": "Auto und Übersiedlung",
+      "subtitle": "Collect the Golf, then west along the coast to the Darß",
+      "car": true,
+      "driveKm": 100,
+      "driveTime": "1h 40m plus the Warnemünde detour",
+      "fixed": [
+        {
+          "time": "by 12:00",
+          "type": "checkout",
+          "label": "IntercityHotel Rostock",
+          "detail": "Check-out window 00:00 – 12:00."
+        },
+        {
+          "time": "11:00",
+          "type": "car",
+          "label": "Collect the Golf — Enterprise, Warnowufer 54",
+          "detail": "Karl at the counter with licence, credit card and ID. Not at the Hbf: allow 20–25 minutes to get across town."
+        },
+        {
+          "time": "16:00",
+          "type": "checkin",
+          "label": "Strandburg, Zingst",
+          "detail": "Window 16:00 – 22:00. Keys in the on-site lockbox."
+        }
+      ],
+      "blocks": [
+        {
+          "label": "Warnemünde",
+          "text": "Optional 15 km detour before heading west — the Teepott, the lighthouse, the wide beach and a first Fischbrötchen."
+        },
+        {
+          "label": "Drive to Zingst",
+          "text": "Via Ribnitz-Damgarten and Barth, roughly 85 km. The last proper supermarkets are in Barth, so shop there — three nights with a kitchen."
+        },
+        {
+          "label": "Zingst Seebrücke",
+          "text": "Settle in, then walk out on the pier as the light goes."
+        }
+      ],
+      "tips": [
+        "Photograph the car from all four corners before leaving the Enterprise forecourt.",
+        "Third floor, stairs only. One trip up, not four."
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-09-02",
+      "weekday": "Mittwoch",
+      "base": "Zingst",
+      "title": "Der Darß",
+      "subtitle": "The wildest beach in Germany, and a lighthouse you can only walk to",
+      "car": true,
+      "driveKm": 80,
+      "driveTime": "about 1h 30m of driving all told",
+      "fixed": [],
+      "blocks": [
+        {
+          "label": "Weststrand",
+          "text": "Wind-bent pines, bleached tree stumps in the sand, no development for kilometres. Regularly voted the best beach in the country and it earns it."
+        },
+        {
+          "label": "Darßer Ort",
+          "text": "The lighthouse and the Natureum at the tip. Cars are kept out — it is a walk or a bike ride from Prerow, roughly an hour each way on foot."
+        },
+        {
+          "label": "Prerow",
+          "text": "Lunch, the Seebrücke, and the Darßer Bauernhäuser with their painted doors."
+        }
+      ],
+      "tips": [
+        "Bikes are the right answer for Darßer Ort. Ask the apartment about rental."
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-09-03",
+      "weekday": "Donnerstag",
+      "base": "Zingst",
+      "title": "Bodden und Kraniche",
+      "subtitle": "The lagoon side, and the start of the crane season",
+      "car": true,
+      "driveKm": 70,
+      "driveTime": "about 1h 20m of driving",
+      "fixed": [],
+      "blocks": [
+        {
+          "label": "Kranichrast",
+          "text": "Zingst is the crane capital of Germany. Early September is the beginning of the gathering — the observation points at Pramort and the Sundische Wiese are the places to stand at dusk. Numbers build through the month, so we are early, but early on the Bodden is still thousands of birds."
+        },
+        {
+          "label": "Nationalpark Vorpommersche Boddenlandschaft",
+          "text": "The eastern tip of the peninsula, reachable on foot or by bike from Zingst. Reed, shallow water, and very little else."
+        },
+        {
+          "label": "Ahrenshoop",
+          "text": "The artists' colony at the other end of the peninsula — galleries, the Schifferkirche, and the Bodden shore."
+        },
+        {
+          "label": "Wet-weather fallback",
+          "text": "The Experimentarium in Zingst, or the Darß-Museum in Prerow."
+        }
+      ],
+      "tips": [
+        "Dusk is the crane hour. Bring the warm layer — it comes off the water hard once the sun drops."
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-09-04",
+      "weekday": "Freitag",
+      "base": "Binz",
+      "title": "Über die Brücke nach Rügen",
+      "subtitle": "Chalk cliffs in the afternoon, beach bars after dark",
+      "car": true,
+      "driveKm": 160,
+      "driveTime": "about 2h 30m of driving",
+      "fixed": [
+        {
+          "time": "by 10:30",
+          "type": "checkout",
+          "label": "Strandburg, Zingst",
+          "detail": "Check-out window 08:00 – 10:30. Tightest morning of the trip."
+        },
+        {
+          "time": "17:00",
+          "type": "checkin",
+          "label": "IFA Rügen Hotel, Binz",
+          "detail": "Window 17:00 – 00:00."
+        }
+      ],
+      "blocks": [
+        {
+          "label": "Drive to Rügen",
+          "text": "Zingst → Barth → Stralsund → over the Rügenbrücke, which is toll-free. Roughly two hours to the Sassnitz area. We save Stralsund itself for Sunday, when we sleep there."
+        },
+        {
+          "label": "Jasmund Nationalpark",
+          "text": "The Königsstuhl and the Kreidefelsen. Cars cannot drive up, so it is either a shuttle or the Hochuferweg on foot from Sassnitz. The walk is the better version by a wide margin — the cliffs arrive gradually, it costs nothing, and it needs no planning beyond deciding to do it."
+        },
+        {
+          "label": "Down to Binz",
+          "text": "Half an hour south. Check in at 17:00, dump the bags, go straight out."
+        },
+        {
+          "label": "Binz bei Nacht",
+          "text": "The whole reason Binz is on the list. Strandpromenade, the beach bars, the Seebrücke lit up, the Bäderarchitektur looking absurd in the dark. No alarm set for tomorrow."
+        }
+      ],
+      "tips": [
+        "Fresh legs today, so the cliff walk goes today rather than tomorrow.",
+        "No need to fix anything in advance. If the light is bad or the legs are not having it, the coast road south is lovely anyway."
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-09-05",
+      "weekday": "Samstag",
+      "base": "Stralsund",
+      "title": "Bäderarchitektur, langsam",
+      "subtitle": "A deliberately gentle day, then the houseboat",
+      "car": true,
+      "driveKm": 110,
+      "driveTime": "about 1h 40m of driving",
+      "fixed": [
+        {
+          "time": "by 10:00",
+          "type": "checkout",
+          "label": "IFA Rügen Hotel, Binz",
+          "detail": "Check-out window 00:00 – 10:00. Set one alarm, for this."
+        },
+        {
+          "time": "15:00",
+          "type": "checkin",
+          "label": "Hausboot Seeadler, Stralsund",
+          "detail": "Window 15:00 – 20:30. Lockbox on the left harbour gate."
+        }
+      ],
+      "blocks": [
+        {
+          "label": "Prora",
+          "text": "Five kilometres north of Binz: the Koloss von Prora, four and a half kilometres of unfinished Nazi holiday camp, now half ruin and half luxury flats. Genuinely strange, and close enough to manage on a rough morning."
+        },
+        {
+          "label": "Sellin",
+          "text": "The most photographed pier on the Baltic, and the cliff staircase down to it. This is the picture on our own front page."
+        },
+        {
+          "label": "Jagdschloss Granitz",
+          "text": "Hunting lodge on a hill with a cast-iron spiral staircase up the central tower and a view over the whole south of the island. The Rasender Roland steam railway pootles between Binz, Sellin and Granitz if we feel like being hauled about by a steam engine — worth knowing the Deutschland-Ticket does not cover it."
+        },
+        {
+          "label": "Over to Stralsund",
+          "text": "About 55 km back across the bridge. Then a sauna on a boat, which is the correct end to this particular day."
+        }
+      ],
+      "tips": [
+        "Deliberately under-planned. If Friday night runs long, drop Granitz and keep Sellin.",
+        "If we are somehow full of energy, Kap Arkona in the north is the stretch goal we skipped yesterday."
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-09-06",
+      "weekday": "Sonntag",
+      "base": "Stralsund",
+      "title": "Stralsund",
+      "subtitle": "Ozeaneum, tall ships and a UNESCO Altstadt — no driving",
+      "car": false,
+      "driveKm": 0,
+      "fixed": [],
+      "blocks": [
+        {
+          "label": "Ozeaneum",
+          "text": "The big one. Baltic and North Sea tanks, and a hall of life-size whales hanging in the dark. Easily a whole morning if it grabs us, and a decent rainy-day answer if it does not."
+        },
+        {
+          "label": "Gorch Fock I",
+          "text": "The 1933 sail training ship moored on the Hafeninsel, climbable and photogenic."
+        },
+        {
+          "label": "Altstadt",
+          "text": "UNESCO-listed with Wismar, and small enough to do properly on foot: the Alter Markt, the Rathaus façade, Nikolaikirche, and the tower of Marienkirche if the legs are willing."
+        },
+        {
+          "label": "Abendessen an Bord",
+          "text": "Barbecue on the roof terrace, sauna, harbour lights. The car does not move today."
+        }
+      ],
+      "tips": [
+        "A full rest day for the driver, and the only one with no logistics at all. Nothing here is booked, so the running order is whatever we feel like on the morning."
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-09-07",
+      "weekday": "Montag",
+      "base": "Rostock",
+      "title": "Zurück nach Rostock",
+      "subtitle": "Last drive, and the car goes back a day early",
+      "car": true,
+      "driveKm": 90,
+      "driveTime": "about 1h 20m plus a stop",
+      "fixed": [
+        {
+          "time": "by 11:00",
+          "type": "checkout",
+          "label": "Hausboot Seeadler",
+          "detail": "Check-out window 07:00 – 11:00."
+        },
+        {
+          "time": "15:00–18:00",
+          "type": "checkin",
+          "label": "Hotel Am Hopfenmarkt, Rostock",
+          "detail": "Reception closes at 18:00. Do not be late."
+        },
+        {
+          "time": "by 18:00",
+          "type": "car",
+          "label": "Return the Golf — Enterprise, Warnowufer 54",
+          "detail": "Branch closes 18:00 on weekdays. Handing it back tonight means no hotel garage and nothing to do tomorrow morning."
+        }
+      ],
+      "blocks": [
+        {
+          "label": "A stop on the way",
+          "text": "Ribnitz-Damgarten for the Deutsches Bernsteinmuseum, or one more hour on a beach at Graal-Müritz. Roughly halfway either way."
+        },
+        {
+          "label": "Tanken",
+          "text": "Fill up before the return so the tank matches how we got it. Cheapest options are on the way in, not at the harbour."
+        },
+        {
+          "label": "Hand back the car",
+          "text": "Check in at the hotel first, then walk the car round to the Warnowufer — it is a short walk back to the Altstadt afterwards."
+        },
+        {
+          "label": "Letzter Abend",
+          "text": "Rostock Altstadt without a car to worry about, and nothing scheduled before an 11:06 train."
+        }
+      ],
+      "tips": [
+        "Returning the car tonight rather than tomorrow removes the whole 11:00-vs-11:06 problem and the hotel garage with it.",
+        "Empty the car properly. Chargers live in door pockets and stay there forever."
+      ]
+    },
+    {
+      "day": 9,
+      "date": "2026-09-08",
+      "weekday": "Dienstag",
+      "base": "Leipzig",
+      "title": "Heimreise",
+      "subtitle": "Rostock to Leipzig, the long way round",
+      "car": false,
+      "driveKm": 0,
+      "fixed": [
+        {
+          "time": "by 10:00",
+          "type": "checkout",
+          "label": "Hotel Am Hopfenmarkt",
+          "detail": "Check-out window 08:00 – 10:00."
+        },
+        {
+          "time": "11:06",
+          "type": "train",
+          "label": "Rostock Hbf → Leipzig Hbf",
+          "detail": "RB11 · RE8 · S1 · RE13 — 6h 33m, three changes. Arrive 17:39."
+        }
+      ],
+      "blocks": [
+        {
+          "label": "Morning",
+          "text": "If the car went back last night, this is a genuinely slow morning: coffee in the Altstadt and a walk to the station."
+        },
+        {
+          "label": "The 6-minute change at Wismar",
+          "text": "Same platform, so it works, but it is the one connection on the whole trip with no slack. Everything after it is hourly-ish."
+        },
+        {
+          "label": "Logbuch",
+          "text": "Six and a half hours of regional trains is exactly enough time to write the trip up."
+        }
+      ],
+      "tips": [
+        "Earlier departures exist if we want to be home sooner — nothing on this day is booked."
+      ]
+    }
+  ]
+}

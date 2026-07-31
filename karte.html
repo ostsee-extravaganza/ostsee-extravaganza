@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karte — Ostsee Extravaganza</title>
+<meta name="description" content="The route, the five stays and every spot we have collected, on OpenStreetMap. Click the map to drop your own pin.">
+<meta name="theme-color" content="#10344c">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/worksans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<main id="main">
+
+  <header class="page-head">
+    <div class="wrap page-head__inner">
+      <p class="eyebrow">Karte</p>
+      <h1>Wo wir sind, und was in der Nähe liegt</h1>
+      <p class="lede">The five stays, the driving route, and a shortlist of places worth a look.
+        Click anywhere on the map to drop your own pin — it saves in this browser.</p>
+    </div>
+  </header>
+
+  <div class="wave-band wave-band--from-navy"></div>
+
+  <section class="section section--tight">
+    <div class="wrap">
+
+      <div class="map-toolbar">
+        <div class="cluster" id="filters" role="group" aria-label="Kategorien filtern"></div>
+        <div class="cluster" style="margin-left:auto">
+          <button class="btn btn--sm btn--ghost" id="btn-fit" type="button">Alles zeigen</button>
+          <button class="btn btn--sm btn--ghost" id="btn-locate" type="button">Wo bin ich?</button>
+          <button class="btn btn--sm" id="btn-addmode" type="button" aria-pressed="false">Pin setzen</button>
+        </div>
+      </div>
+
+      <p class="xs faint mt-3" id="map-hint">Turn on <strong>Pin setzen</strong>, then click the map
+        where you want it.</p>
+
+      <div class="map-shell mt-4">
+        <div id="map" role="application" aria-label="Karte der Reise"></div>
+      </div>
+
+      <p class="xs faint mt-3">
+        Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>
+        contributors. Zingst and the Stralsund houseboat are pinned at street level — the house
+        number could not be resolved, so they may be a few doors out.
+      </p>
+
+      <div class="grid grid--2 mt-6" style="align-items:start">
+        <div>
+          <h2 class="h3">Die Route</h2>
+          <ol class="routelist mt-4" id="routelist"></ol>
+        </div>
+        <div>
+          <div class="cluster" style="justify-content:space-between">
+            <h2 class="h3">Spots</h2>
+            <a class="btn btn--sm btn--ghost" href="spots.html">Spot hinzufügen</a>
+          </div>
+          <div class="mt-4" id="spotlist"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script type="module" src="assets/js/karte.js"></script>
+</body>
+</html>

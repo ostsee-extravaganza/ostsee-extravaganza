@@ -1,0 +1,196 @@
+{
+  "note": "Suggestions, not a plan. Nothing here is booked or ticketed — it is a shortlist to pick from on the day. Add your own on the Spots page; anything you add lives in your browser until it is committed here.",
+  "categories": [
+    {
+      "id": "strand",
+      "label": "Strand",
+      "hex": "#2f5fb8"
+    },
+    {
+      "id": "natur",
+      "label": "Natur",
+      "hex": "#2f9070"
+    },
+    {
+      "id": "aussicht",
+      "label": "Aussicht",
+      "hex": "#e0a92b"
+    },
+    {
+      "id": "kultur",
+      "label": "Kultur",
+      "hex": "#a04a86"
+    },
+    {
+      "id": "essen",
+      "label": "Essen",
+      "hex": "#e04a2f"
+    },
+    {
+      "id": "kneipe",
+      "label": "Kneipe",
+      "hex": "#7059bd"
+    },
+    {
+      "id": "sonstiges",
+      "label": "Sonstiges",
+      "hex": "#7a8f99"
+    }
+  ],
+  "spots": [
+    {
+      "id": "weststrand",
+      "name": "Weststrand",
+      "category": "strand",
+      "note": "Wind-bent pines and bleached stumps in the sand. Walk as far as you like; nobody is counting.",
+      "coords": [
+        54.44534,
+        12.48117
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "leuchtturm-darsser-ort",
+      "name": "Leuchtturm Darßer Ort",
+      "category": "natur",
+      "note": "Only reachable on foot or by bike from Prerow — about an hour each way. Lighthouse and the Natureum at the tip.",
+      "coords": [
+        54.47281,
+        12.50228
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "seebruecke-prerow",
+      "name": "Seebrücke Prerow",
+      "category": "strand",
+      "note": "Lunch, a pier, and the painted doors of the Darßer Bauernhäuser nearby.",
+      "coords": [
+        54.45614,
+        12.57074
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "ahrenshoop",
+      "name": "Ahrenshoop",
+      "category": "kultur",
+      "note": "Artists' colony at the far end of the peninsula. Galleries and the Schifferkirche.",
+      "coords": [
+        54.37895,
+        12.41919
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "pramort",
+      "name": "Pramort",
+      "category": "natur",
+      "note": "Crane-watching platform at the eastern tip. Dusk is the hour.",
+      "coords": [
+        54.43085,
+        12.92224
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "koenigsstuhl",
+      "name": "Königsstuhl",
+      "category": "natur",
+      "note": "The chalk cliffs. Walk in on the Hochuferweg from Sassnitz rather than driving up.",
+      "coords": [
+        54.57314,
+        13.65971
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "kap-arkona",
+      "name": "Kap Arkona",
+      "category": "aussicht",
+      "note": "Two lighthouses and a steep coast at the northern tip of Rügen.",
+      "coords": [
+        54.67678,
+        13.43782
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "vitt",
+      "name": "Vitt",
+      "category": "kultur",
+      "note": "Thatched fishing hamlet below Kap Arkona. Cars stay outside.",
+      "coords": [
+        54.66605,
+        13.43085
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "seebruecke-sellin",
+      "name": "Seebrücke Sellin",
+      "category": "strand",
+      "note": "The pier on our own front page. Best at dusk.",
+      "coords": [
+        54.38349,
+        13.69945
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "jagdschloss-granitz",
+      "name": "Jagdschloss Granitz",
+      "category": "aussicht",
+      "note": "Cast-iron spiral staircase and a view over the south of the island.",
+      "coords": [
+        54.3806,
+        13.62728
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "prora",
+      "name": "Prora",
+      "category": "kultur",
+      "note": "Four and a half kilometres of unfinished Nazi holiday camp. Genuinely strange.",
+      "coords": [
+        54.43269,
+        13.57963
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "ozeaneum",
+      "name": "Ozeaneum",
+      "category": "kultur",
+      "note": "Baltic tanks and a hall of life-size whales. A good rainy-day answer.",
+      "coords": [
+        54.3156,
+        13.09707
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "teepott-warnemuende",
+      "name": "Teepott Warnemünde",
+      "category": "aussicht",
+      "note": "Swooping 1960s roof by the lighthouse, wide beach beside it.",
+      "coords": [
+        54.18168,
+        12.08577
+      ],
+      "source": "seed"
+    },
+    {
+      "id": "seebruecke-zingst",
+      "name": "Seebrücke Zingst",
+      "category": "strand",
+      "note": "Two minutes from the apartment. Walk out on it as the light goes.",
+      "coords": [
+        54.44298,
+        12.68168
+      ],
+      "source": "seed"
+    }
+  ]
+}

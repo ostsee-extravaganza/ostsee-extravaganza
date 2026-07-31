@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Plan — Ostsee Extravaganza</title>
+<meta name="description" content="Day-by-day itinerary for 31 August to 8 September 2026: trains, the car, five stays and what to do in between.">
+<meta name="theme-color" content="#10344c">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/worksans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<main id="main">
+
+  <header class="page-head">
+    <div class="wrap page-head__inner">
+      <p class="eyebrow">Der Plan</p>
+      <h1>Neun Tage, Tag für Tag</h1>
+      <p class="lede">Every bed and both ends of the car hire are fixed. Everything else here is a
+        proposal — argue with it, reorder it, throw days out. The fixed events are marked.</p>
+      <dl class="page-head__facts" id="head-facts"></dl>
+    </div>
+  </header>
+
+  <div class="wave-band wave-band--from-navy"></div>
+
+
+  <!-- ===================== DAYS ===================== -->
+  <section class="section section--alt" id="tage">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Tagesablauf</p>
+        <h2>31. August – 8. September</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <div class="wave-band wave-band--from-alt"></div>
+
+  <!-- ===================== TRAINS ===================== -->
+  <section class="section" id="bahn">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Bahn</p>
+        <h2>Leipzig ⇄ Rostock</h2>
+        <p class="lede" id="ticket-note"></p>
+      </div>
+      <div class="grid grid--2" id="train-options" style="align-items:start"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CAR ===================== -->
+  <section class="section section--alt" id="auto">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Auto</p>
+        <h2>Der Golf</h2>
+      </div>
+      <div class="grid grid--2" style="align-items:start">
+        <div class="stack" id="car-facts"></div>
+        <div class="stack">
+          <div class="card">
+            <div class="card__body">
+              <h3 class="h4">Am Schalter dabeihaben</h3>
+              <p class="small dim mt-3">All four are on Karl. Without any one of them, Enterprise
+                will not hand over the car.</p>
+              <ul class="checklist mt-4" id="car-checklist"></ul>
+            </div>
+          </div>
+          <div id="car-warnings" class="stack"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script type="module" src="assets/js/plan.js"></script>
+</body>
+</html>

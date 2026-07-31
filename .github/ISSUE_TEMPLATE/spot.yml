@@ -1,0 +1,34 @@
+name: Spot vorschlagen
+description: Somewhere worth a look — a beach, a pub, a view, anything.
+title: "Spot: "
+labels: ["spot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nichts hiervon ist verbindlich. Wir picken unterwegs aus, worauf wir Lust haben.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Weststrand
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kategorie
+      options: [strand, natur, aussicht, kultur, essen, kneipe, sonstiges]
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Google Maps, OpenStreetMap oder eine Website. Koordinaten ziehen wir daraus.
+      placeholder: https://www.google.com/maps/place/...
+  - type: textarea
+    id: note
+    attributes:
+      label: Warum?
+      placeholder: Ein Satz reicht.

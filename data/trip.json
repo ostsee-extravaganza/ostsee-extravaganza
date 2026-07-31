@@ -1,0 +1,35 @@
+{
+  "title": "Ostsee Extravaganza",
+  "tagline": "Eight nights on the Baltic — Rostock, the Darß, and all around Rügen",
+  "start": "2026-08-31",
+  "end": "2026-09-08",
+  "nights": 8,
+  "days": 9,
+  "origin": "Leipzig",
+  "region": "Mecklenburg-Vorpommern",
+  "currency": "EUR",
+  "travellers": [
+    {
+      "id": "vedran",
+      "name": "Vedran",
+      "age": 42,
+      "role": "Bookings, navigation, chief of morale"
+    },
+    {
+      "id": "karl",
+      "name": "Karl",
+      "age": 35,
+      "role": "Registered main driver — the licence and the card at the counter are his"
+    }
+  ],
+  "stats": {
+    "stays": 5,
+    "towns": 4,
+    "drivingKmEstimate": 700,
+    "trainHoursEachWay": 6.5
+  },
+  "notes": [
+    "Both of us hold a Deutschland-Ticket valid across August and September, so every regional train on this trip is already paid for.",
+    "The car is only ours from 1 to 8 September. Day one and day nine are on foot and by rail."
+  ]
+}

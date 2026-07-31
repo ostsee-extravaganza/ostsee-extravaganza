@@ -1,0 +1,164 @@
+{
+  "note": "Confirmation numbers, PINs, host phone numbers and anything to do with what this costs are deliberately NOT in this repo. Coordinates were geocoded via Nominatim; 'street' precision means the house number could not be resolved.",
+  "stays": [
+    {
+      "id": "rostock-1",
+      "seq": 1,
+      "town": "Rostock",
+      "name": "IntercityHotel Rostock",
+      "kind": "hotel",
+      "room": "Standard Twin Room",
+      "address": "Herweghstraße 51, 18055 Rostock",
+      "coords": [
+        54.07789,
+        12.13314
+      ],
+      "coordsPrecision": "exact",
+      "checkIn": "2026-08-31",
+      "checkOut": "2026-09-01",
+      "nights": 1,
+      "checkInWindow": "15:00 – 00:00",
+      "checkOutWindow": "00:00 – 12:00",
+      "meals": "none",
+      "highlights": [
+        "Beside Rostock Hbf",
+        "City view",
+        "Soundproofed"
+      ],
+      "blurb": "A functional first night, two minutes from the platform we arrive on. The point of this one is the Altstadt and the Stadthafen, not the room.",
+      "image": "assets/img/places/place-rostock.jpg",
+      "warnings": []
+    },
+    {
+      "id": "zingst",
+      "seq": 2,
+      "town": "Zingst",
+      "name": "Strandburg",
+      "kind": "apartment",
+      "room": "Two-Bedroom Apartment — entire place",
+      "address": "Birkenstraße 27, 3. Etage, 18374 Zingst",
+      "coords": [
+        54.4371,
+        12.69952
+      ],
+      "coordsPrecision": "street",
+      "checkIn": "2026-09-01",
+      "checkOut": "2026-09-04",
+      "nights": 3,
+      "checkInWindow": "16:00 – 22:00",
+      "checkOutWindow": "08:00 – 10:30",
+      "meals": "none",
+      "highlights": [
+        "Sea view",
+        "Balcony",
+        "Kitchen",
+        "Dishwasher",
+        "Washing-up done by whoever cooked"
+      ],
+      "blurb": "Our base for the Darß. Three nights, a kitchen, and the Nationalpark Vorpommersche Boddenlandschaft on the doorstep — the longest stop of the trip and the one to actually settle into.",
+      "image": "assets/img/places/place-zingst.jpg",
+      "keys": "Keys are in an on-site lockbox.",
+      "warnings": [
+        "Third floor, stairs only — pack accordingly.",
+        "Last big supermarkets are in Barth, on the way in."
+      ]
+    },
+    {
+      "id": "binz",
+      "seq": 3,
+      "town": "Binz",
+      "name": "IFA Rügen Hotel & Ferienpark",
+      "kind": "hotel",
+      "room": "Studio with Extra Bed — entire studio",
+      "address": "Strandpromenade 74, 18609 Binz",
+      "coords": [
+        54.41191,
+        13.59803
+      ],
+      "coordsPrecision": "exact",
+      "checkIn": "2026-09-04",
+      "checkOut": "2026-09-05",
+      "nights": 1,
+      "checkInWindow": "17:00 – 00:00",
+      "checkOutWindow": "00:00 – 10:00",
+      "meals": "none",
+      "highlights": [
+        "On the Strandpromenade",
+        "Balcony",
+        "Kitchenette",
+        "Walk to everything"
+      ],
+      "blurb": "Deliberately one night and deliberately short. We check in at 17:00, go straight out to the beach bars on the Strandpromenade, and nobody plans anything for the following morning.",
+      "image": "assets/img/places/place-binz.jpg",
+      "warnings": [
+        "Only 17 hours here, most of them after dark. Do not schedule a sunrise.",
+        "Binz parking is paid and strictly enforced — check the hotel arrangement."
+      ]
+    },
+    {
+      "id": "stralsund",
+      "seq": 4,
+      "town": "Stralsund",
+      "name": "Hausboot \"Seeadler\"",
+      "kind": "houseboat",
+      "room": "Two-Bedroom Villa — entire houseboat",
+      "address": "Zur Schwedenschanze 27, Hafen, 18435 Stralsund",
+      "coords": [
+        54.33802,
+        13.07011
+      ],
+      "coordsPrecision": "street",
+      "checkIn": "2026-09-05",
+      "checkOut": "2026-09-07",
+      "nights": 2,
+      "checkInWindow": "15:00 – 20:30",
+      "checkOutWindow": "07:00 – 11:00",
+      "meals": "none",
+      "highlights": [
+        "Sauna",
+        "360° roof terrace",
+        "Two bathrooms",
+        "Barbecue",
+        "Air conditioning",
+        "Washing machine"
+      ],
+      "blurb": "The extravagant bit. A moored houseboat in Stralsund harbour with a sauna and a roof terrace, two minutes from a UNESCO Altstadt. Comfortably the best idea on the whole itinerary.",
+      "image": "assets/img/places/place-stralsund.jpg",
+      "keys": "Keys in an on-site lockbox — the box hangs visibly on the left harbour gate. The host sends the code in advance.",
+      "warnings": [
+        "If the lockbox code has not arrived by 3 September, chase the host."
+      ]
+    },
+    {
+      "id": "rostock-2",
+      "seq": 5,
+      "town": "Rostock",
+      "name": "Hotel Am Hopfenmarkt",
+      "kind": "hotel",
+      "room": "Twin Room",
+      "address": "Buchbinderstraße 10, 18055 Rostock",
+      "coords": [
+        54.08799,
+        12.13777
+      ],
+      "coordsPrecision": "exact",
+      "checkIn": "2026-09-07",
+      "checkOut": "2026-09-08",
+      "nights": 1,
+      "checkInWindow": "15:00 – 18:00",
+      "checkOutWindow": "08:00 – 10:00",
+      "meals": "none",
+      "highlights": [
+        "In the Altstadt",
+        "Short walk to the car return",
+        "Nothing to rush for"
+      ],
+      "blurb": "Last night, back where we started, in the Altstadt rather than by the station. Drop the car at Enterprise on the Warnowufer before they shut at 18:00 and Tuesday morning becomes trivial.",
+      "image": "assets/img/places/place-rostock-hafen.jpg",
+      "warnings": [
+        "Check-in closes at 18:00 — the tightest window of the trip.",
+        "Returning the car on Monday evening means no hotel garage to find at all."
+      ]
+    }
+  ]
+}

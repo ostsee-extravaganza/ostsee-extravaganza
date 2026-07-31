@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spots — Ostsee Extravaganza</title>
+<meta name="description" content="Paste a link or a Google Maps URL and it becomes a card. The low-friction inbox for places worth a look.">
+<meta name="theme-color" content="#10344c">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/worksans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<main id="main">
+
+  <header class="page-head">
+    <div class="wrap page-head__inner">
+      <p class="eyebrow">Spots</p>
+      <h1>Dinge, die wir vielleicht machen</h1>
+      <p class="lede">Paste a website or a Google Maps link and it lands here as a card. Nothing on
+        this page is a plan — it is a shortlist to pick from when we are standing there.</p>
+    </div>
+  </header>
+
+  <div class="wave-band wave-band--from-navy"></div>
+
+  <!-- ===================== ADD ===================== -->
+  <section class="section section--tight">
+    <div class="wrap wrap--narrow">
+      <form class="addform card" id="addform" autocomplete="off">
+        <div class="card__body stack">
+          <div>
+            <label class="field__label" for="f-url">Link einfügen</label>
+            <input class="field" id="f-url" name="url" type="text" inputmode="url"
+                   placeholder="Google Maps, Website, OpenStreetMap …">
+            <p class="field__help" id="url-feedback">Coordinates get pulled out of the link
+              automatically where they are in there.</p>
+          </div>
+
+          <div class="grid grid--2" style="gap:var(--sp-4)">
+            <div>
+              <label class="field__label" for="f-name">Name</label>
+              <input class="field" id="f-name" name="name" type="text" placeholder="Weststrand" required>
+            </div>
+            <div>
+              <label class="field__label" for="f-cat">Kategorie</label>
+              <select class="field" id="f-cat" name="category"></select>
+            </div>
+          </div>
+
+          <div>
+            <label class="field__label" for="f-note">Notiz</label>
+            <textarea class="field" id="f-note" name="note" rows="2"
+                      placeholder="Warum lohnt sich das?"></textarea>
+          </div>
+
+          <div class="grid grid--2" style="gap:var(--sp-4)">
+            <div>
+              <label class="field__label" for="f-lat">Breite (lat)</label>
+              <input class="field" id="f-lat" name="lat" type="text" inputmode="decimal" placeholder="54.44534">
+            </div>
+            <div>
+              <label class="field__label" for="f-lon">Länge (lon)</label>
+              <input class="field" id="f-lon" name="lon" type="text" inputmode="decimal" placeholder="12.48117">
+            </div>
+          </div>
+
+          <div class="cluster">
+            <button class="btn" type="submit">Spot speichern</button>
+            <button class="btn btn--ghost" type="reset">Leeren</button>
+            <span class="xs faint" id="save-feedback" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+      </form>
+
+      <div class="notice notice--info mt-5">
+        <div class="notice__title">Wo das landet</div>
+        <p>Saved spots live in <strong>this browser only</strong> until they are committed to the
+          repo — so Karl's additions and Vedran's do not see each other yet. Use
+          <strong>JSON kopieren</strong> below and send it over, or open a GitHub issue with the
+          button underneath; a free account is all that needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OURS ===================== -->
+  <section class="section section--alt" id="unsere">
+    <div class="wrap">
+      <div class="cluster" style="justify-content:space-between">
+        <div>
+          <p class="eyebrow">Von uns</p>
+          <h2 id="ours-count">Gesammelt</h2>
+        </div>
+        <div class="cluster">
+          <button class="btn btn--sm btn--ghost" id="btn-export" type="button">JSON kopieren</button>
+          <a class="btn btn--sm btn--ghost" id="btn-issue" href="#" rel="noopener">Per GitHub-Issue</a>
+          <a class="btn btn--sm" href="karte.html">Auf der Karte</a>
+        </div>
+      </div>
+      <div class="grid grid--3 mt-5" id="ours"></div>
+    </div>
+  </section>
+
+  <div class="wave-band wave-band--from-alt"></div>
+
+  <!-- ===================== SUGGESTIONS ===================== -->
+  <section class="section" id="vorschlaege">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Vorschläge</p>
+        <h2>Zum Rauspicken</h2>
+        <p class="lede" id="seed-note"></p>
+      </div>
+      <div class="cluster" id="filters" role="group" aria-label="Kategorien filtern"></div>
+      <div class="grid grid--3 mt-5" id="seeded"></div>
+    </div>
+  </section>
+
+</main>
+
+<script type="module" src="assets/js/spots.js"></script>
+</body>
+</html>

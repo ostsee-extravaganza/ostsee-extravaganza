@@ -1,0 +1,31 @@
+# Credentials and anything cost-related — NEVER commit these
+PRIVAT.md
+PRIVAT-*.html
+privat-*.html
+# working plan doc — holds the cost model and the storno deadlines
+PLAN.md
+*.private.md
+.env
+*.token
+token.txt
+*token*.txt
+*.pat
+.ostsee-token
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# editors / tooling
+.vscode/
+.idea/
+*.swp
+node_modules/
+
+# local dev server config (harmless, but not part of the site)
+.claude/launch.json
+
+# original booking screenshots — they contain confirmation numbers and PINs
+screenshots/

@@ -1,0 +1,95 @@
+{
+  "note": "Hero and place photography from Wikimedia Commons. Each image keeps its own licence; attribution is rendered on the site. Replace with our own photos as they arrive.",
+  "images": [
+    {
+      "file": "assets/img/places/hero-sellin.jpg",
+      "slot": "hero",
+      "caption": "Seebrücke Sellin, Rügen",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Seebr%C3%BCcke_Sellin_nord%C3%B6stlicher_Teil.jpg",
+      "commonsFile": "File:Seebrücke Sellin nordöstlicher Teil.jpg"
+    },
+    {
+      "file": "assets/img/places/place-rostock.jpg",
+      "slot": "rostock",
+      "caption": "Rostock across the Warnow",
+      "author": "Smaack",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rostock_panorama_-_Smaack_-_201507.jpg",
+      "commonsFile": "File:Rostock panorama - Smaack - 201507.jpg"
+    },
+    {
+      "file": "assets/img/places/place-zingst.jpg",
+      "slot": "zingst",
+      "caption": "Seebrücke Zingst",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:.00_2802_Zingst,_Seebr%C3%BCcke.jpg",
+      "commonsFile": "File:.00 2802 Zingst, Seebrücke.jpg"
+    },
+    {
+      "file": "assets/img/places/place-binz.jpg",
+      "slot": "binz",
+      "caption": "Strand und Seebrücke, Binz",
+      "author": "Jörg Blobelt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20020609100MNR_Binz_Strand_mit_Seebr%C3%BCcke.jpg",
+      "commonsFile": "File:20020609100MNR Binz Strand mit Seebrücke.jpg"
+    },
+    {
+      "file": "assets/img/places/place-stralsund.jpg",
+      "slot": "stralsund",
+      "caption": "Hafeninsel mit Ozeaneum, Stralsund",
+      "author": "User:Klugschnacker",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Stralsund,_am_Hafen_(2013-07-11),_by_Klugschnacker_in_Wikipedia_(39).JPG",
+      "commonsFile": "File:Stralsund, am Hafen (2013-07-11), by Klugschnacker in Wikipedia (39).JPG"
+    },
+    {
+      "file": "assets/img/places/place-jasmund.jpg",
+      "slot": "jasmund",
+      "caption": "Kreidefelsen vom Königsstuhl, Jasmund",
+      "author": "Lena.Kloß",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aussicht_vom_K%C3%B6nigsstuhl_auf_majest%C3%A4tische_Kreidefelsen.jpg",
+      "commonsFile": "File:Aussicht vom Königsstuhl auf majestätische Kreidefelsen.jpg"
+    },
+    {
+      "file": "assets/img/places/extra-binz-kurhaus.jpg",
+      "slot": "binz",
+      "caption": "Kurhaus Binz — Bäderarchitektur",
+      "author": "J.-H. Janßen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Binz_Kurhaus_05.jpg",
+      "commonsFile": "File:Binz Kurhaus 05.jpg"
+    },
+    {
+      "file": "assets/img/places/extra-weststrand.jpg",
+      "slot": "darss",
+      "caption": "Weststrand, Darß",
+      "author": "Seestern657",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Regenstimmung_am_Weststrand.jpg",
+      "commonsFile": "File:Regenstimmung am Weststrand.jpg"
+    },
+    {
+      "file": "assets/img/places/place-rostock-hafen.jpg",
+      "slot": "rostock",
+      "caption": "Stadthafen Rostock zur Hanse Sail",
+      "author": "Rimshot",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hanse_Sail_2008_Stadthafen_1.jpg",
+      "commonsFile": "File:Hanse Sail 2008 Stadthafen 1.jpg"
+    }
+  ]
+}

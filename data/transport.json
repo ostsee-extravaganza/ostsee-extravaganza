@@ -1,0 +1,242 @@
+{
+  "car": {
+    "vehicle": "Volkswagen Golf or similar",
+    "gearbox": "Manual",
+    "seats": 5,
+    "doors": "2/4",
+    "supplier": "Enterprise",
+    "branch": "Rostock Downtown",
+    "branchAddress": "Warnowufer 54, 18057 Rostock",
+    "branchPhone": "0381 778940",
+    "branchHours": {
+      "monFri": "08:00 – 18:00",
+      "sat": "09:00 – 12:00",
+      "sun": "closed",
+      "checked": "2026-07-31",
+      "source": "web listings — confirm with the branch before relying on it"
+    },
+    "pickUp": "2026-09-01T11:00",
+    "dropOff": "2026-09-08T11:00",
+    "days": 7,
+    "deposit": 250.0,
+    "depositNote": "Refundable, blocked on Karl's credit card at the counter.",
+    "mainDriver": "Karl",
+    "checklist": [
+      {
+        "item": "Physical credit card in Karl's name",
+        "why": "The €250 deposit cannot be paid any other way."
+      },
+      {
+        "item": "Karl's physical driving licence",
+        "why": "A photo or a phone wallet copy will not be accepted."
+      },
+      {
+        "item": "Karl's passport or national ID",
+        "why": "Proof of identity for the main driver."
+      },
+      {
+        "item": "Be at the counter by 11:00",
+        "why": "Enterprise may not hold the car if we are late."
+      }
+    ],
+    "warnings": [
+      "The branch is on the Warnowufer at the Stadthafen, NOT at Rostock Hbf — allow time to get across town on pick-up day.",
+      "Return the tank at the level we collected it. Fill up on the last drive in."
+    ],
+    "coords": [
+      54.09364,
+      12.11436
+    ]
+  },
+  "trains": {
+    "ticket": "Deutschland-Ticket",
+    "ticketNote": "Every leg below is S-Bahn, RB or RE, so the Deutschland-Ticket covers all of it — nothing to book and nothing to buy. Both subscriptions just need to be live in August and September.",
+    "notCovered": [
+      "IC and ICE services",
+      "Rasender Roland narrow-gauge railway on Rügen"
+    ],
+    "options": [
+      {
+        "id": "out-a",
+        "direction": "outbound",
+        "recommended": true,
+        "date": "2026-08-31",
+        "depart": "09:22",
+        "arrive": "15:23",
+        "duration": "6h 01m",
+        "changes": 2,
+        "legs": [
+          {
+            "line": "S2",
+            "from": "Leipzig Hbf (tief)",
+            "fromPlatform": "2",
+            "dep": "09:22",
+            "to": "Lutherstadt Wittenberg Hbf",
+            "toPlatform": "1",
+            "arr": "10:28",
+            "towards": "Lutherstadt Wittenberg Hbf"
+          },
+          {
+            "transfer": "17 min"
+          },
+          {
+            "line": "RE3",
+            "number": "3348",
+            "from": "Lutherstadt Wittenberg Hbf",
+            "fromPlatform": "5",
+            "dep": "10:45",
+            "to": "Berlin Gesundbrunnen",
+            "toPlatform": "9",
+            "arr": "12:28",
+            "towards": "Schwedt (Oder)"
+          },
+          {
+            "transfer": "26 min",
+            "note": "same platform"
+          },
+          {
+            "line": "RE5",
+            "number": "4358",
+            "from": "Berlin Gesundbrunnen",
+            "fromPlatform": "10",
+            "dep": "12:54",
+            "to": "Rostock Hbf",
+            "toPlatform": "8",
+            "arr": "15:23",
+            "towards": "Rostock Hbf"
+          }
+        ]
+      },
+      {
+        "id": "out-b",
+        "direction": "outbound",
+        "recommended": false,
+        "date": "2026-08-31",
+        "depart": "09:46",
+        "arrive": "16:24",
+        "duration": "6h 38m",
+        "changes": 3,
+        "legs": [
+          {
+            "line": "S4",
+            "from": "Leipzig Hbf (tief)",
+            "fromPlatform": "2",
+            "dep": "09:46",
+            "to": "Falkenberg (Elster)",
+            "toPlatform": "7",
+            "arr": "10:50",
+            "towards": "Falkenberg (Elster)"
+          },
+          {
+            "transfer": "28 min"
+          },
+          {
+            "line": "RE4",
+            "number": "3153",
+            "from": "Falkenberg (Elster)",
+            "fromPlatform": "2",
+            "dep": "11:18",
+            "to": "Berlin Hbf",
+            "toPlatform": "7",
+            "arr": "12:52",
+            "towards": "Rathenow"
+          },
+          {
+            "transfer": "54 min"
+          },
+          {
+            "line": "RE5",
+            "number": "3512",
+            "from": "Berlin Hbf",
+            "fromPlatform": "5",
+            "dep": "13:46",
+            "to": "Neustrelitz Hbf",
+            "toPlatform": "3",
+            "arr": "14:59",
+            "towards": "Stralsund Hbf"
+          },
+          {
+            "transfer": "7 min",
+            "note": "same platform"
+          },
+          {
+            "line": "RE50",
+            "number": "63990",
+            "from": "Neustrelitz Hbf",
+            "fromPlatform": "4",
+            "dep": "15:06",
+            "to": "Rostock Hbf",
+            "toPlatform": "10",
+            "arr": "16:24",
+            "towards": "Rostock Hbf"
+          }
+        ]
+      },
+      {
+        "id": "back-a",
+        "direction": "return",
+        "recommended": true,
+        "date": "2026-09-08",
+        "depart": "11:06",
+        "arrive": "17:39",
+        "duration": "6h 33m",
+        "changes": 3,
+        "legs": [
+          {
+            "line": "RB11",
+            "number": "13118",
+            "from": "Rostock Hbf",
+            "fromPlatform": "10",
+            "dep": "11:06",
+            "to": "Wismar",
+            "toPlatform": "2",
+            "arr": "12:15",
+            "towards": "Wismar"
+          },
+          {
+            "transfer": "6 min",
+            "note": "same platform"
+          },
+          {
+            "line": "RE8",
+            "number": "62020",
+            "from": "Wismar",
+            "fromPlatform": "1",
+            "dep": "12:21",
+            "to": "Wittenberge",
+            "toPlatform": "2",
+            "arr": "13:54",
+            "towards": "Elsterwerda"
+          },
+          {
+            "transfer": "16 min"
+          },
+          {
+            "line": "S1",
+            "from": "Wittenberge",
+            "fromPlatform": "1 A-C",
+            "dep": "14:10",
+            "to": "Magdeburg Hbf",
+            "toPlatform": "3",
+            "arr": "15:45",
+            "towards": "Schönebeck-Bad Salzelmen"
+          },
+          {
+            "transfer": "21 min"
+          },
+          {
+            "line": "RE13",
+            "number": "16125",
+            "from": "Magdeburg Hbf",
+            "fromPlatform": "2",
+            "dep": "16:06",
+            "to": "Leipzig Hbf",
+            "toPlatform": "12",
+            "arr": "17:39",
+            "towards": "Leipzig Hbf"
+          }
+        ]
+      }
+    ]
+  }
+}
