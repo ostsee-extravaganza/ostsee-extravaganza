@@ -1,0 +1,29 @@
+{
+  "note": "Newest first. Bodies take light markdown: **bold**, *italic*, [text](url), `code`, - lists, and blank lines between paragraphs. The three entries below are placeholders written while building the site — overwrite them with real ones.",
+  "posts": [
+    {
+      "id": "karte-und-spots",
+      "date": "2026-07-31",
+      "title": "Karte und Spots sind online",
+      "author": "Website",
+      "placeholder": true,
+      "body": "Die [Karte](karte.html) läuft jetzt auf OpenStreetMap: alle fünf Unterkünfte geocodiert, die Mietwagen-Station am Warnowufer, die Route als gestrichelte Linie, und vierzehn Vorschläge zum Rauspicken.\n\nZwei Punkte sitzen nur straßengenau — Zingst und das Hausboot in Stralsund. Die Hausnummern ließen sich nicht auflösen, also steht das auch so auf der Seite, statt Genauigkeit vorzutäuschen.\n\nAuf [Spots](spots.html) kann man einen Link einwerfen — Google Maps, OpenStreetMap, Apple Maps — und die Koordinaten werden rausgezogen. Alles Hinzugefügte liegt erstmal nur im eigenen Browser.\n\n**Nichts davon ist ein Plan.** Es ist eine Liste, aus der wir vor Ort auswählen."
+    },
+    {
+      "id": "die-route-steht",
+      "date": "2026-07-31",
+      "title": "Die Route steht",
+      "author": "Website",
+      "placeholder": true,
+      "body": "Rostock, Zingst, Binz, Stralsund, Rostock. Erst nach Westen auf die Halbinsel, dann über die Rügenbrücke nach Osten und wieder zurück.\n\nDrei Nächte in Zingst sind der längste Halt und der einzige mit Küche — der Darß braucht Zeit, und der Weststrand läuft nicht weg. Binz ist bewusst eine Nacht und bewusst kurz: Anreise 17:00, danach die Strandbars, und für den nächsten Morgen ist ausdrücklich nichts geplant.\n\nDas Hausboot in Stralsund mit Sauna und Dachterrasse ist der beste Einfall der ganzen Planung.\n\nEine Sache musste umgestellt werden: Samstag hatte ursprünglich Jasmund, Sellin *und* Granitz drin, nach einer langen Nacht in Binz. Jasmund ist jetzt auf Freitagnachmittag vorgezogen, wo die Beine noch frisch sind."
+    },
+    {
+      "id": "gebucht",
+      "date": "2026-07-31",
+      "title": "Alles gebucht",
+      "author": "Website",
+      "placeholder": true,
+      "body": "Fünf Betten und der Golf stehen. Neun Tage, acht Nächte, 31. August bis 8. September.\n\nDie Bahn ist mit dem Deutschland-Ticket abgedeckt — jede Etappe ist S-Bahn, RB oder RE, also nichts zu buchen. Hin über Wittenberg und Gesundbrunnen, zurück über Wismar, Wittenberge und Magdeburg. Der Umstieg in Wismar hat sechs Minuten, gleicher Bahnsteig, und ist die einzige Verbindung ohne Puffer.\n\nZwei Dinge sind beim Durchgehen der Buchungen aufgefallen:\n\n- Die Mietwagen-Station liegt am **Stadthafen**, nicht am Hauptbahnhof. Am Abholtag also 20–25 Minuten quer durch die Stadt einplanen.\n- Rückgabe wäre Dienstag 11:00, der Zug fährt 11:06 vom Hauptbahnhof. Das geht nicht. Also geben wir den Wagen Montagabend zurück — die Filiale ist bis 18:00 offen, und der Dienstagmorgen ist damit frei."
+    }
+  ]
+}

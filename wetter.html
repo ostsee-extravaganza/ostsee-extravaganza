@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wetter &amp; Wasser — Ostsee Extravaganza</title>
-<meta name="description" content="Live weather, Baltic sea temperature, wind and sun times for all four towns.">
+<meta name="description" content="Live forecast, Baltic sea temperature, wind and sun times for Rostock, Zingst, Binz and Stralsund.">
 <meta name="theme-color" content="#10344c">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
@@ -15,46 +15,62 @@
 <body>
 
 <main id="main">
-
   <header class="page-head">
     <div class="wrap page-head__inner">
       <p class="eyebrow">Wetter &amp; Wasser</p>
-      <h1>Wetter und Wasser</h1>
-      <p class="lede">Live forecast for Rostock, Zingst, Binz and Stralsund, Baltic sea temperature, wind, and sunrise and sunset. The page we will actually open every morning.</p>
+      <h1>Was oben und was unten los ist</h1>
+      <p class="lede">Live forecast, Baltic water temperature, wind and sun times for all four
+        towns. Free, no API key, and nothing about you leaves this page.</p>
+      <dl class="page-head__facts" id="head-facts"></dl>
     </div>
   </header>
 
   <div class="wave-band wave-band--from-navy"></div>
 
-  <section class="section">
-    <div class="wrap wrap--narrow stack-lg">
-      <div class="notice notice--soon">
-        <div class="notice__title">Noch nicht gebaut</div>
-        <p>This page is scaffolded but empty — it is step 6 of the build. The chrome, the
-           design system and the data layer are already in place, so it is mostly a matter of
-           wiring this one up.</p>
+  <!-- current -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="cluster" style="justify-content:space-between">
+        <div>
+          <p class="eyebrow">Jetzt</p>
+          <h2>Vier Orte, gerade eben</h2>
+        </div>
+        <button class="btn btn--sm btn--ghost" id="btn-refresh" type="button">Aktualisieren</button>
       </div>
-
-      <div>
-        <h2 class="h3">Was hier hinkommt</h2>
-        <ul class="checklist mt-5">
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Open-Meteo forecast — free, no API key, no tracking</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>All four towns side by side, seven days out</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Baltic sea surface temperature, which decides whether we swim</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Wind speed and direction — it decides the Darß beaches</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Sunrise, sunset and golden hour for Kap Arkona and the Königsstuhl</span></li>
-        </ul>
-      </div>
-
-      <div class="cluster">
-        <a class="btn" href="plan.html">Der Plan</a>
-        <a class="btn btn--ghost" href="index.html">Zurück zum Start</a>
-      </div>
+      <div class="grid grid--4 mt-5" id="now"></div>
+      <p class="xs faint mt-4" id="now-note"></p>
     </div>
   </section>
 
+  <!-- forecast -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Vorhersage</p>
+        <h2>Die nächsten Tage</h2>
+        <p class="lede" id="fc-note"></p>
+      </div>
+      <div class="cluster" id="town-tabs" role="tablist" aria-label="Ort wählen"></div>
+      <div class="table-scroll mt-4" id="forecast"></div>
+    </div>
+  </section>
+
+  <div class="wave-band wave-band--from-alt"></div>
+
+  <!-- climate normals -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Normalerweise</p>
+        <h2>Anfang September an der Ostsee</h2>
+        <p class="lede" id="klima-note"></p>
+      </div>
+      <div class="table-scroll" id="klima"></div>
+      <p class="xs faint mt-4" id="klima-src"></p>
+    </div>
+  </section>
 </main>
 
-<script type="module" src="assets/js/stub.js"></script>
+<script type="module" src="assets/js/wetter.js"></script>
 </body>
 </html>

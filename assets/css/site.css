@@ -2279,3 +2279,215 @@ select.field {
 }
 :root[data-theme='dark'] .field__help--ok { color: var(--c-foam); }
 :root[data-theme='dark'] .field__help--warn { color: var(--c-mustard); }
+
+/* ============================================================================
+   22. Galerie
+   ========================================================================= */
+
+.galgroup + .galgroup {
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-7);
+  border-top: 1px solid var(--line);
+}
+.galgroup__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  align-items: start;
+  justify-content: space-between;
+}
+
+.tilegrid {
+  display: grid;
+  gap: var(--sp-3);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+}
+.tile {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+}
+.tile__btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  line-height: 0;
+}
+.tile img,
+.tile video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s var(--ease);
+}
+.tile__btn:hover img {
+  transform: scale(1.03);
+}
+.tile--video video {
+  aspect-ratio: 16 / 9;
+  background: var(--c-ink);
+}
+.tile__cap {
+  padding: var(--sp-2) var(--sp-3);
+  font-size: var(--fs-xs);
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+/* lightbox */
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  background: rgba(7, 27, 39, 0.94);
+  padding: var(--sp-5);
+}
+.lb__figure {
+  margin: 0;
+  max-width: min(96vw, 74rem);
+  max-height: 92vh;
+  display: grid;
+  gap: var(--sp-3);
+}
+.lb__stage {
+  line-height: 0;
+  touch-action: pan-y;
+}
+.lb__stage img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  margin-inline: auto;
+  border-radius: var(--r-sm);
+}
+.lb__cap {
+  color: color-mix(in srgb, var(--c-cream) 80%, transparent);
+  font-size: var(--fs-sm);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  justify-content: space-between;
+}
+.lb__count {
+  font-family: var(--ff-display);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+  color: var(--c-mustard);
+}
+.lb__close,
+.lb__nav {
+  position: absolute;
+  background: rgba(247, 241, 227, 0.12);
+  color: var(--c-cream);
+  border: 1px solid rgba(247, 241, 227, 0.3);
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.lb__close:hover,
+.lb__nav:hover {
+  background: rgba(247, 241, 227, 0.24);
+  color: #fff;
+}
+.lb__close {
+  top: var(--sp-4);
+  right: var(--sp-4);
+}
+.lb__nav--prev { left: var(--sp-4); top: 50%; transform: translateY(-50%); }
+.lb__nav--next { right: var(--sp-4); top: 50%; transform: translateY(-50%); }
+@media (max-width: 34em) {
+  .lb__nav--prev { left: var(--sp-2); }
+  .lb__nav--next { right: var(--sp-2); }
+}
+
+/* ============================================================================
+   23. Logbuch
+   ========================================================================= */
+
+.post + .post {
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-7);
+  border-top: 1px solid var(--line);
+}
+.post__head {
+  display: grid;
+  gap: var(--sp-2);
+}
+.post__date {
+  font-family: var(--ff-display);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+.post__title {
+  font-size: var(--fs-d3);
+  text-transform: uppercase;
+}
+.post__anchor {
+  text-decoration: none;
+}
+.post__anchor:hover {
+  text-decoration: underline;
+}
+.post__meta {
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.post__img {
+  margin-top: var(--sp-5);
+  width: 100%;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line);
+}
+.post__body {
+  margin-top: var(--sp-4);
+  max-width: 64ch;
+}
+.post__body > * + * {
+  margin-top: var(--sp-4);
+}
+.post__body ul {
+  padding-left: 1.15rem;
+  display: grid;
+  gap: var(--sp-2);
+}
+.post__body li::marker {
+  color: var(--accent);
+}
+.post__body code {
+  font-family: var(--ff-mono);
+  font-size: 0.9em;
+  background: var(--bg-alt);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+.post__body blockquote {
+  border-left: 3px solid var(--c-mustard);
+  padding-left: var(--sp-4);
+  font-style: italic;
+  color: var(--text-dim);
+}
+
+/* code in prose generally */
+code {
+  font-family: var(--ff-mono);
+  font-size: 0.9em;
+}
+.notice code {
+  background: var(--bg-alt);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}

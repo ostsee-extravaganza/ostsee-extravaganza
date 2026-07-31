@@ -16,9 +16,9 @@ index.html          Start — poster hero, the five stays, live countdown
 plan.html           Der Plan — day by day, trains, the car
 karte.html          Karte — Leaflet + OpenStreetMap, route, stays, our own pins
 spots.html          Spots — paste a link, get a card; it shows up on the Karte
-galerie.html        Galerie — photos and clips by day and place
-logbuch.html        Logbuch — short dated posts
-wetter.html         Wetter & Wasser — forecast, sea temperature, wind, sun times
+galerie.html        Galerie — photos and clips by day and place, with a lightbox
+logbuch.html        Logbuch — short dated posts, light markdown bodies
+wetter.html         Wetter & Wasser — live forecast, Baltic sea temperature, September normals
 packliste.html      Packliste — shared checkable list plus the car-rental documents
 kilometer.html      Kilometerzähler — odometer and fuel log, real l/100 km
 
@@ -28,7 +28,8 @@ assets/js/store.js  Local scratch layer over data/spots.json (localStorage)
 assets/js/*.js      One module per page
 assets/fonts/       Oswald + Work Sans, self-hosted woff2 (OFL)
 data/*.json         All content — the single source of truth
-photos/             Trip photos, YYYY-MM-DD/
+photos/             Trip photos, YYYY-MM-DD/ — see photos/README.md
+tools/fotos.py      Rebuilds data/photos.json: web copies, thumbnails, EXIF
 ```
 
 ## Running it locally
@@ -67,9 +68,11 @@ own licence with attribution rendered in the footer and next to each photo. See
 2. ✅ Data layer and Der Plan
 3. ✅ Karte + Spots — Leaflet on OSM, geocoded stays, route line, category
    filters, click-to-drop pins, link parsing, GitHub-issue intake
-4. ◻︎ Galerie + Logbuch
-5. ◻︎ Wetter & Wasser + Packliste
-6. ◻︎ Kilometerzähler
+4. ✅ Galerie + Logbuch — grouped grid, keyboard/swipe lightbox, photo pipeline,
+   dated posts with a small markdown subset
+5. ✅ Wetter & Wasser — live Open-Meteo forecast, marine sea-surface temperature,
+   and 2015–2025 normals for the trip window precomputed into data/klima.json
+6. ◻︎ Packliste + Kilometerzähler
 7. ◻︎ Service worker, OG image, Superlative
 
 The seven pages not yet built are scaffolded: they carry the shared chrome and list
@@ -86,6 +89,13 @@ booking confirmation numbers in `PRIVAT.md`.
 
 The one exception is the €250 Enterprise deposit, which is on the Der Plan page because it goes
 on the main driver's card at the counter and being surprised by it would be worse.
+
+## Weather data
+
+`data/klima.json` holds averages for 31 August – 8 September across 2015–2025, computed once from
+the Open-Meteo ERA5 archive so the page needs no network for the useful part. The live forecast and
+sea-surface temperature are fetched at view time; the sea call is allowed to fail without taking
+the page down with it.
 
 ## Chart colours
 

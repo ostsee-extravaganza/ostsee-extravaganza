@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galerie — Ostsee Extravaganza</title>
-<meta name="description" content="Photo and video gallery, grouped by day and place.">
+<meta name="description" content="Photos and short clips, grouped by day and place.">
 <meta name="theme-color" content="#10344c">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
@@ -15,46 +15,46 @@
 <body>
 
 <main id="main">
-
   <header class="page-head">
     <div class="wrap page-head__inner">
       <p class="eyebrow">Galerie</p>
       <h1>Bilder und Clips</h1>
-      <p class="lede">Photos and short videos, grouped by day and place. Usable right now for whatever we photograph while planning, then filled properly during the trip.</p>
+      <p class="lede">Grouped by day and place. Empty for now in the parts that matter — that is
+        rather the point of going.</p>
+      <dl class="page-head__facts" id="head-facts"></dl>
     </div>
   </header>
 
   <div class="wave-band wave-band--from-navy"></div>
 
-  <section class="section">
-    <div class="wrap wrap--narrow stack-lg">
-      <div class="notice notice--soon">
-        <div class="notice__title">Noch nicht gebaut</div>
-        <p>This page is scaffolded but empty — it is step 5 of the build. The chrome, the
-           design system and the data layer are already in place, so it is mostly a matter of
-           wiring this one up.</p>
-      </div>
+  <section class="section section--tight">
+    <div class="wrap" id="groups"></div>
+  </section>
 
-      <div>
-        <h2 class="h3">Was hier hinkommt</h2>
-        <ul class="checklist mt-5">
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Photos read from photos/YYYY-MM-DD/ with a generated manifest</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Hand-rolled lightbox, keyboard and swipe navigation</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Grouped by trip day, with a “Planungsphase” group for now</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Short clips inline, compressed to 720p so the repo stays sane</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>EXIF GPS optionally places a photo on the Karte</span></li>
-        </ul>
-      </div>
-
-      <div class="cluster">
-        <a class="btn" href="plan.html">Der Plan</a>
-        <a class="btn btn--ghost" href="index.html">Zurück zum Start</a>
+  <section class="section section--alt">
+    <div class="wrap wrap--narrow">
+      <div class="notice notice--info">
+        <div class="notice__title">Fotos hinzufügen</div>
+        <p>Drop files into <code>photos/YYYY-MM-DD/</code> and run
+          <code>python3 tools/fotos.py</code>. It makes the web copies and thumbnails, strips EXIF
+          from them, reads the capture time for ordering, and rebuilds the manifest. Dated folders
+          land on their trip day automatically; <code>photos/planung/</code> becomes its own group.</p>
       </div>
     </div>
   </section>
-
 </main>
 
-<script type="module" src="assets/js/stub.js"></script>
+<!-- lightbox -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Bildansicht">
+  <button class="lb__close" id="lb-close" type="button" aria-label="Schließen">&times;</button>
+  <button class="lb__nav lb__nav--prev" id="lb-prev" type="button" aria-label="Vorheriges">&#8249;</button>
+  <button class="lb__nav lb__nav--next" id="lb-next" type="button" aria-label="Nächstes">&#8250;</button>
+  <figure class="lb__figure">
+    <div class="lb__stage" id="lb-stage"></div>
+    <figcaption class="lb__cap" id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<script type="module" src="assets/js/galerie.js"></script>
 </body>
 </html>
