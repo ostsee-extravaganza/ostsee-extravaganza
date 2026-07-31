@@ -9,6 +9,46 @@
 
 const KEY = 'ose:spots:v1';
 
+/* --- generic per-device state -------------------------------------------- */
+
+/**
+ * A tiny namespaced localStorage box. Used by the packing list and the fuel
+ * log — both are per-device by nature, and both say so on the page.
+ * Never throws: a corrupt or blocked store degrades to the fallback.
+ */
+export function stateStore(name, fallback) {
+  const k = `ose:${name}:v1`;
+  return {
+    read() {
+      try {
+        const raw = localStorage.getItem(k);
+        if (!raw) return structuredClone(fallback);
+        const v = JSON.parse(raw);
+        return v ?? structuredClone(fallback);
+      } catch {
+        console.warn(`Store ${k} unreadable; using defaults.`);
+        return structuredClone(fallback);
+      }
+    },
+    write(v) {
+      try {
+        localStorage.setItem(k, JSON.stringify(v));
+        return true;
+      } catch (err) {
+        console.error(`Could not save ${k}`, err);
+        return false;
+      }
+    },
+    clear() {
+      try {
+        localStorage.removeItem(k);
+      } catch {
+        /* nothing useful to do */
+      }
+    },
+  };
+}
+
 /** Read the local additions. Never throws — a corrupt store just reads empty. */
 export function readLocal() {
   try {

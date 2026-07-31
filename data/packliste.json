@@ -1,0 +1,132 @@
+{
+  "note": "Ticks are saved in your own browser, so each of us sees only our own. 'who' marks whether an item is mine, yours, or one we only need between us — the point is that nobody packs a second first-aid kit.",
+  "weatherBasis": "Sized against data/klima.json: 31 Aug – 8 Sep normally runs about 20 °C by day and 13–15 °C at night, with rain on roughly a quarter of days and gusts around 20 km/h on the open coast.",
+  "groups": [
+    {
+      "id": "dokumente",
+      "label": "Dokumente & Auto",
+      "note": "The only genuinely unforgiving group. Without the first three, Enterprise does not hand over the car.",
+      "items": [
+        { "id": "kreditkarte", "label": "Physische Kreditkarte", "who": "karl", "critical": true,
+          "note": "Muss auf Karls Namen laufen — die Kaution von 250 € geht nur darüber, und zwar auf die Karte des Hauptfahrers." },
+        { "id": "fuehrerschein", "label": "Führerschein, physisch", "who": "karl", "critical": true,
+          "note": "Kein Foto, keine Wallet-Kopie. Wird nicht akzeptiert." },
+        { "id": "ausweis-karl", "label": "Personalausweis oder Pass", "who": "karl", "critical": true,
+          "note": "Identitätsnachweis für den Hauptfahrer." },
+        { "id": "ausweis-vedran", "label": "Personalausweis", "who": "vedran" },
+        { "id": "dticket-v", "label": "Deutschland-Ticket auf dem Handy", "who": "vedran", "critical": true,
+          "note": "Muss im August und im September gültig sein — die Hinfahrt läuft auf den August, die Rückfahrt auf den September." },
+        { "id": "dticket-k", "label": "Deutschland-Ticket auf dem Handy", "who": "karl", "critical": true },
+        { "id": "buchungen", "label": "Buchungsbestätigungen offline verfügbar", "who": "vedran",
+          "note": "Rügen hat Löcher im Netz. Als PDF aufs Handy, nicht nur im Mail-Postfach." },
+        { "id": "krankenkasse", "label": "Versichertenkarte", "who": "shared" }
+      ]
+    },
+    {
+      "id": "kleidung",
+      "label": "Kleidung",
+      "note": "Zwanzig Grad am Tag, dreizehn bis fünfzehn in der Nacht, und der Wind kommt an der offenen Küste ungebremst.",
+      "items": [
+        { "id": "regenjacke", "label": "Regenjacke, winddicht", "who": "shared", "critical": true,
+          "note": "An etwa jedem vierten Tag in diesem Fenster regnet es. Am Weststrand gibt es nichts, worunter man sich stellen kann." },
+        { "id": "warme-schicht", "label": "Warme Zwischenschicht", "who": "shared",
+          "note": "Für den Kranich-Abend am Pramort und die Dachterrasse in Stralsund. Nach Sonnenuntergang zieht es vom Wasser." },
+        { "id": "lange-hose", "label": "Lange Hose", "who": "shared" },
+        { "id": "kurze-hose", "label": "Kurze Hose", "who": "shared" },
+        { "id": "tshirts", "label": "T-Shirts für neun Tage", "who": "shared",
+          "note": "Zingst und das Hausboot haben Waschmaschine bzw. Trockenständer — es müssen keine neun sein." },
+        { "id": "pullover", "label": "Pullover", "who": "shared" },
+        { "id": "muetze", "label": "Mütze", "who": "shared", "note": "Ernsthaft. Ostsee, September, Wind." },
+        { "id": "wanderschuhe", "label": "Feste Schuhe", "who": "shared", "critical": true,
+          "note": "Der Hochuferweg von Sassnitz zum Königsstuhl ist keine Promenade." },
+        { "id": "turnschuhe", "label": "Turnschuhe", "who": "shared" },
+        { "id": "ausgehklamotten", "label": "Etwas für Binz am Freitagabend", "who": "shared",
+          "note": "Strandbars, nicht Oper. Aber nicht die Wanderhose." }
+      ]
+    },
+    {
+      "id": "strand",
+      "label": "Strand & Wasser",
+      "note": "Die Ostsee hat Anfang September rund 18–20 °C — wärmer als im Juni.",
+      "items": [
+        { "id": "badehose", "label": "Badehose", "who": "shared", "critical": true },
+        { "id": "handtuch", "label": "Strandhandtuch", "who": "shared" },
+        { "id": "saunatuch", "label": "Saunatuch", "who": "shared", "critical": true,
+          "note": "Das Hausboot hat eine Sauna. Wäre albern, das zu vergessen." },
+        { "id": "badelatschen", "label": "Badelatschen", "who": "shared" },
+        { "id": "sonnencreme", "label": "Sonnencreme", "who": "shared",
+          "note": "Tiefe Sonne und Reflexion vom Wasser. Unterschätzt man." },
+        { "id": "sonnenbrille", "label": "Sonnenbrille", "who": "shared" }
+      ]
+    },
+    {
+      "id": "technik",
+      "label": "Technik",
+      "items": [
+        { "id": "ladekabel", "label": "Ladekabel für alles", "who": "shared", "critical": true },
+        { "id": "powerbank", "label": "Powerbank", "who": "shared",
+          "note": "Navigation frisst den Akku, und die Ladebuchse im Golf ist eine." },
+        { "id": "kamera", "label": "Kamera plus Ersatzakku", "who": "vedran",
+          "note": "Kap Arkona und die Seebrücke Sellin sind die Gründe, sie mitzunehmen." },
+        { "id": "speicherkarte", "label": "Leere Speicherkarte", "who": "vedran" },
+        { "id": "autohalterung", "label": "Handyhalterung fürs Auto", "who": "shared" },
+        { "id": "kopfhoerer", "label": "Kopfhörer", "who": "shared", "note": "Sechs Stunden Regionalbahn." },
+        { "id": "fernglas", "label": "Fernglas", "who": "shared",
+          "note": "Für die Kraniche am Bodden macht das den ganzen Unterschied." }
+      ]
+    },
+    {
+      "id": "kueche",
+      "label": "Küche & Bord",
+      "note": "Zingst hat eine ganze Küche, das Hausboot einen Grill. Beides will nicht bei Null anfangen.",
+      "items": [
+        { "id": "kaffee", "label": "Kaffee, guter", "who": "shared", "critical": true,
+          "note": "Die Ferienwohnungs-Alternative ist immer schlimmer als befürchtet." },
+        { "id": "gewuerze", "label": "Salz, Pfeffer, Olivenöl", "who": "shared",
+          "note": "Nicht dreimal in neun Tagen neu kaufen." },
+        { "id": "spuelmittel", "label": "Spülmittel und ein Schwamm", "who": "shared" },
+        { "id": "muellbeutel", "label": "Müllbeutel", "who": "shared" },
+        { "id": "korkenzieher", "label": "Korkenzieher und Flaschenöffner", "who": "shared", "critical": true },
+        { "id": "kuehltasche", "label": "Kühltasche", "who": "shared",
+          "note": "Barth ist die letzte Gelegenheit für einen großen Einkauf." }
+      ]
+    },
+    {
+      "id": "kleinigkeiten",
+      "label": "Kleinigkeiten",
+      "items": [
+        { "id": "kulturbeutel", "label": "Kulturbeutel", "who": "shared" },
+        { "id": "erste-hilfe", "label": "Erste-Hilfe-Set", "who": "shared",
+          "note": "Einer reicht. Bitte einmal absprechen." },
+        { "id": "medikamente", "label": "Eigene Medikamente", "who": "shared" },
+        { "id": "muecken", "label": "Mückenschutz", "who": "shared",
+          "note": "Bodden, Schilf, Windstille — die Kombination ist unangenehm." },
+        { "id": "pflaster", "label": "Blasenpflaster", "who": "shared",
+          "note": "Siehe Hochuferweg." },
+        { "id": "wasserflasche", "label": "Trinkflasche", "who": "shared" },
+        { "id": "beutel", "label": "Stoffbeutel", "who": "shared" },
+        { "id": "buch", "label": "Ein Buch", "who": "shared",
+          "note": "Für den Regenviertel-Tag, den die Statistik verspricht." },
+        { "id": "kartenspiel", "label": "Kartenspiel", "who": "shared" },
+        { "id": "bargeld", "label": "Etwas Bargeld", "who": "shared",
+          "note": "Strandkorb-Vermietung, Kurtaxe-Automaten und Fischbuden sind nicht überall digital." }
+      ]
+    },
+    {
+      "id": "nicht-vergessen",
+      "label": "Nicht vergessen",
+      "note": "Die Dinge, die man erst merkt, wenn sie fehlen.",
+      "items": [
+        { "id": "lockbox-zingst", "label": "Lockbox-Code Zingst notiert", "who": "vedran", "critical": true },
+        { "id": "lockbox-stralsund", "label": "Lockbox-Code Stralsund erhalten", "who": "vedran", "critical": true,
+          "note": "Kommt per Nachricht vom Gastgeber. Wenn er bis zum 3. September nicht da ist: nachfragen." },
+        { "id": "auto-fotos", "label": "Auto bei Übernahme rundum fotografieren", "who": "karl", "critical": true },
+        { "id": "tanken", "label": "Vor der Rückgabe volltanken", "who": "karl", "critical": true,
+          "note": "So wie übernommen. Günstiger auf dem Weg rein als am Hafen." },
+        { "id": "zugverbindung", "label": "Zugverbindung offline speichern", "who": "shared" },
+        { "id": "proviant", "label": "Proviant für die Hinfahrt", "who": "shared",
+          "note": "Sechs Stunden Regionalbahn ohne Bordbistro. In Leipzig kaufen, nicht in Gesundbrunnen." }
+      ]
+    }
+  ]
+}

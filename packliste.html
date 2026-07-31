@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Packliste — Ostsee Extravaganza</title>
-<meta name="description" content="Shared packing list with the car rental document requirements built in.">
+<meta name="description" content="Shared packing list, sized against what early September on the Baltic actually does, with the car-rental documents built in.">
 <meta name="theme-color" content="#10344c">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
@@ -15,46 +15,44 @@
 <body>
 
 <main id="main">
-
   <header class="page-head">
     <div class="wrap page-head__inner">
       <p class="eyebrow">Packliste</p>
-      <h1>Die Packliste</h1>
-      <p class="lede">One shared checkable list, plus a documents block wired straight to what Enterprise demands at the counter.</p>
+      <h1>Was mit muss</h1>
+      <p class="lede" id="lede"></p>
+      <dl class="page-head__facts" id="head-facts"></dl>
     </div>
   </header>
 
   <div class="wave-band wave-band--from-navy"></div>
 
-  <section class="section">
-    <div class="wrap wrap--narrow stack-lg">
-      <div class="notice notice--soon">
-        <div class="notice__title">Noch nicht gebaut</div>
-        <p>This page is scaffolded but empty — it is step 6 of the build. The chrome, the
-           design system and the data layer are already in place, so it is mostly a matter of
-           wiring this one up.</p>
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="map-toolbar">
+        <div class="cluster" id="who-tabs" role="group" aria-label="Nach Person filtern"></div>
+        <div class="cluster" style="margin-left:auto">
+          <button class="btn btn--sm btn--ghost" id="btn-hide-done" type="button" aria-pressed="false">
+            Erledigte ausblenden</button>
+          <button class="btn btn--sm btn--ghost" id="btn-reset" type="button">Alles zurücksetzen</button>
+        </div>
       </div>
 
-      <div>
-        <h2 class="h3">Was hier hinkommt</h2>
-        <ul class="checklist mt-5">
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Checkable list, saved per device, grouped by category</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>A Dokumente block for Karl: credit card, physical licence, passport or ID</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Weather-driven suggestions once the Wetter page exists</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>A separate “nicht vergessen” block for chargers, adapters and the sauna towel</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Shared items marked so we do not both bring a first-aid kit</span></li>
-        </ul>
-      </div>
-
-      <div class="cluster">
-        <a class="btn" href="plan.html">Der Plan</a>
-        <a class="btn btn--ghost" href="index.html">Zurück zum Start</a>
-      </div>
+      <div class="progress mt-5" id="progress"></div>
+      <div id="groups" class="mt-6"></div>
     </div>
   </section>
 
+  <section class="section section--alt">
+    <div class="wrap wrap--narrow">
+      <div class="notice notice--info">
+        <div class="notice__title">Wo die Haken liegen</div>
+        <p>In diesem Browser, sonst nirgends — jeder sieht nur die eigenen. Die Liste selbst steht in
+          <code>data/packliste.json</code>; wer etwas ergänzen will, das beide betrifft, ergänzt sie dort.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
-<script type="module" src="assets/js/stub.js"></script>
+<script type="module" src="assets/js/packliste.js"></script>
 </body>
 </html>

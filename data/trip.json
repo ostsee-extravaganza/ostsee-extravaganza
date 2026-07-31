@@ -25,8 +25,7 @@
   "stats": {
     "stays": 5,
     "towns": 4,
-    "drivingKmEstimate": 700,
-    "trainHoursEachWay": 6.5
+    "note": "Driving distance is not stored here — it is the sum of driveKm across data/itinerary.json, so there is one number and not two. Currently 610 km of planned driving; expect real-world routing and detours to add to that."
   },
   "notes": [
     "Both of us hold a Deutschland-Ticket valid across August and September, so every regional train on this trip is already paid for.",

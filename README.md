@@ -19,8 +19,8 @@ spots.html          Spots — paste a link, get a card; it shows up on the Karte
 galerie.html        Galerie — photos and clips by day and place, with a lightbox
 logbuch.html        Logbuch — short dated posts, light markdown bodies
 wetter.html         Wetter & Wasser — live forecast, Baltic sea temperature, September normals
-packliste.html      Packliste — shared checkable list plus the car-rental documents
-kilometer.html      Kilometerzähler — odometer and fuel log, real l/100 km
+packliste.html      Packliste — checkable list, car-rental documents built in
+kilometer.html      Kilometerzähler — odometer and fuel log, real l/100 km and ct/km
 
 assets/css/site.css Design system: tokens, components, light + dark
 assets/js/core.js   Shared chrome, data loading, formatting
@@ -72,11 +72,11 @@ own licence with attribution rendered in the footer and next to each photo. See
    dated posts with a small markdown subset
 5. ✅ Wetter & Wasser — live Open-Meteo forecast, marine sea-surface temperature,
    and 2015–2025 normals for the trip window precomputed into data/klima.json
-6. ◻︎ Packliste + Kilometerzähler
+6. ✅ Packliste + Kilometerzähler — 53-item list with critical-document flagging
+   and per-person filtering; fuel log deriving real consumption and cost per km
 7. ◻︎ Service worker, OG image, Superlative
 
-The seven pages not yet built are scaffolded: they carry the shared chrome and list
-what is coming, so nothing 404s and the navigation is complete.
+Every page in the navigation is now built.
 
 
 

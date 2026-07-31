@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kilometerz&#228;hler — Ostsee Extravaganza</title>
-<meta name="description" content="Odometer and fuel log with real consumption and cost per kilometre.">
+<title>Kilometerzähler — Ostsee Extravaganza</title>
+<meta name="description" content="Odometer and fuel log for the Golf: real consumption, cost per kilometre, and how the guesses held up.">
 <meta name="theme-color" content="#10344c">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
@@ -15,46 +15,116 @@
 <body>
 
 <main id="main">
-
   <header class="page-head">
     <div class="wrap page-head__inner">
-      <p class="eyebrow">Kilometerz&#228;hler</p>
-      <h1>Kilometer und Sprit</h1>
-      <p class="lede">Log the odometer and every fill-up, get real consumption and cost per kilometre, and know what the Golf actually drank rather than guessing.</p>
+      <p class="eyebrow">Kilometerzähler</p>
+      <h1>Was der Golf wirklich gefressen hat</h1>
+      <p class="lede">Kilometerstand und jeder Tankstopp. Daraus fällt der echte Verbrauch heraus —
+        und die Antwort auf die Frage, wie gut die geschätzten 700 km waren.</p>
+      <dl class="page-head__facts" id="head-facts"></dl>
     </div>
   </header>
 
   <div class="wave-band wave-band--from-navy"></div>
 
-  <section class="section">
-    <div class="wrap wrap--narrow stack-lg">
-      <div class="notice notice--soon">
-        <div class="notice__title">Noch nicht gebaut</div>
-        <p>This page is scaffolded but empty — it is step 3 of the build. The chrome, the
-           design system and the data layer are already in place, so it is mostly a matter of
-           wiring this one up.</p>
-      </div>
+  <!-- odometer -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="grid grid--2" style="align-items:start">
+        <form class="card" id="odo-form" autocomplete="off">
+          <div class="card__body stack">
+            <h2 class="h3">Kilometerstand</h2>
+            <p class="small dim">Bei Übernahme und bei Rückgabe. Enterprise will den Tank so
+              zurück, wie er rausgegangen ist.</p>
+            <div class="grid grid--2" style="gap:var(--sp-4)">
+              <div>
+                <label class="field__label" for="odo-start">Übernahme, 1. Sep</label>
+                <input class="field" id="odo-start" type="text" inputmode="numeric" placeholder="z. B. 41320">
+              </div>
+              <div>
+                <label class="field__label" for="odo-end">Rückgabe, 7./8. Sep</label>
+                <input class="field" id="odo-end" type="text" inputmode="numeric" placeholder="z. B. 42045">
+              </div>
+            </div>
+            <div class="cluster">
+              <button class="btn" type="submit">Speichern</button>
+              <span class="xs faint" id="odo-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </form>
 
-      <div>
-        <h2 class="h3">Was hier hinkommt</h2>
-        <ul class="checklist mt-5">
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Odometer at pick-up and drop-off — Enterprise wants the tank as we found it</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Every fill-up: litres, price per litre, total, location</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Computed l/100 km and € per kilometre</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>What the Golf actually drank, versus what we guessed</span></li>
-          <li><span class="checklist__box" aria-hidden="true"></span><span>Per-day distances checked against the plan’s guesses</span></li>
-        </ul>
-      </div>
-
-      <div class="cluster">
-        <a class="btn" href="plan.html">Der Plan</a>
-        <a class="btn btn--ghost" href="index.html">Zurück zum Start</a>
+        <div class="grid grid--2" id="odo-stats"></div>
       </div>
     </div>
   </section>
 
+  <!-- fill-ups -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Tanken</p>
+        <h2>Jeder Stopp</h2>
+        <p class="lede">Immer volltanken, sonst stimmt die Rechnung nicht — der Verbrauch einer
+          Etappe ergibt sich aus den Litern dieser Füllung und den Kilometern seit der letzten.</p>
+      </div>
+
+      <form class="card" id="fuel-form" autocomplete="off">
+        <div class="card__body">
+          <div class="fuelgrid">
+            <div>
+              <label class="field__label" for="f-date">Datum</label>
+              <input class="field" id="f-date" type="date" value="2026-09-01" min="2026-09-01" max="2026-09-08">
+            </div>
+            <div>
+              <label class="field__label" for="f-odo">km-Stand</label>
+              <input class="field" id="f-odo" type="text" inputmode="numeric" placeholder="41680" required>
+            </div>
+            <div>
+              <label class="field__label" for="f-litres">Liter</label>
+              <input class="field" id="f-litres" type="text" inputmode="decimal" placeholder="38,4" required>
+            </div>
+            <div>
+              <label class="field__label" for="f-ppl">€ / Liter</label>
+              <input class="field" id="f-ppl" type="text" inputmode="decimal" placeholder="1,79">
+            </div>
+            <div>
+              <label class="field__label" for="f-where">Wo</label>
+              <input class="field" id="f-where" type="text" placeholder="Barth">
+            </div>
+            <div class="fuelgrid__submit">
+              <button class="btn" type="submit">Hinzufügen</button>
+            </div>
+          </div>
+          <p class="field__help" id="fuel-feedback"></p>
+        </div>
+      </form>
+
+      <div class="table-scroll mt-5" id="fuel-table"></div>
+      <div class="mt-6" id="consumption"></div>
+
+      <div class="cluster mt-5">
+        <button class="btn btn--sm btn--ghost" id="btn-export" type="button">JSON kopieren</button>
+        <button class="btn btn--sm btn--ghost" id="btn-clear" type="button">Tankliste leeren</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-band wave-band--from-alt"></div>
+
+  <!-- plan vs reality -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Plan gegen Wirklichkeit</p>
+        <h2>Wie gut war die Schätzung?</h2>
+      </div>
+      <div class="table-scroll" id="planned"></div>
+      <p class="xs faint mt-4">Alles auf dieser Seite liegt nur in diesem Browser. Der JSON-Export
+        ist die Sicherung.</p>
+    </div>
+  </section>
 </main>
 
-<script type="module" src="assets/js/stub.js"></script>
+<script type="module" src="assets/js/kilometer.js"></script>
 </body>
 </html>

@@ -2491,3 +2491,169 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 3px;
 }
+
+/* ============================================================================
+   24. Packliste
+   ========================================================================= */
+
+.progress {
+  display: grid;
+  gap: var(--sp-3);
+}
+.progress__bar {
+  height: 0.6rem;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.progress__fill {
+  display: block;
+  height: 100%;
+  background: var(--c-foam-dp);
+  transition: width 0.4s var(--ease);
+}
+.progress__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-5);
+  justify-content: space-between;
+  font-size: var(--fs-sm);
+  color: var(--text-dim);
+}
+.progress__warn { color: var(--c-tomato); }
+.progress__ok { color: var(--c-foam-dp); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .progress__ok { color: var(--c-foam); }
+}
+:root[data-theme='dark'] .progress__ok { color: var(--c-foam); }
+
+.packgroup + .packgroup {
+  margin-top: var(--sp-7);
+  padding-top: var(--sp-6);
+  border-top: 1px solid var(--line);
+}
+.packgroup__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  align-items: start;
+  justify-content: space-between;
+}
+
+.packlist {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+}
+.pack {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.pack:last-child { border-bottom: 0; }
+.pack--critical {
+  box-shadow: inset 3px 0 0 var(--c-tomato);
+}
+.pack.is-done {
+  background: var(--bg-alt);
+}
+.pack.is-done .pack__name {
+  text-decoration: line-through;
+  color: var(--text-faint);
+}
+.pack__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--sp-3);
+  align-items: start;
+  padding: var(--sp-3) var(--sp-4);
+  cursor: pointer;
+}
+.pack__box {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.2rem;
+  accent-color: var(--c-foam-dp);
+  flex: none;
+  cursor: pointer;
+}
+.pack__text {
+  display: grid;
+  gap: 3px;
+}
+.pack__name {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+.pack__tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+.pack__note {
+  font-size: var(--fs-xs);
+  color: var(--text-dim);
+  max-width: 68ch;
+}
+
+/* ============================================================================
+   25. Kilometerzähler
+   ========================================================================= */
+
+.fuelgrid {
+  display: grid;
+  gap: var(--sp-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+  align-items: end;
+}
+.fuelgrid__submit {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* single-series horizontal bars: one hue, every bar labelled with its value */
+.hbars {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-2);
+}
+.hbar {
+  display: grid;
+  grid-template-columns: minmax(5rem, 9rem) 1fr auto;
+  gap: var(--sp-3);
+  align-items: center;
+  font-size: var(--fs-sm);
+}
+.hbar__lab {
+  color: var(--text-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hbar__track {
+  height: 1.15rem;
+  background: var(--bg-alt);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.hbar__fill {
+  display: block;
+  height: 100%;
+  background: var(--c-navy);
+  border-radius: 0 3px 3px 0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .hbar__fill { background: #4a7cd0; }
+}
+:root[data-theme='dark'] .hbar__fill { background: #4a7cd0; }
+.hbar__val {
+  font-family: var(--ff-display);
+  font-weight: 600;
+  min-width: 4rem;
+  text-align: right;
+}
