@@ -12,7 +12,7 @@
    current site; the cache only steps in when the network does not answer.
    ========================================================================= */
 
-const VERSION = 'v4';
+const VERSION = 'v5';
 const SHELL = `ose-shell-${VERSION}`;
 const DATA = `ose-data-${VERSION}`;
 const TILES = `ose-tiles-${VERSION}`;
@@ -41,6 +41,7 @@ const PRECACHE = [
   'data/trip.json', 'data/stays.json', 'data/transport.json', 'data/itinerary.json',
   'data/spots.json', 'data/credits.json', 'data/photos.json', 'data/posts.json',
   'data/klima.json', 'data/packliste.json', 'data/superlative.json',
+  /* data/instagram.json is optional — it only exists once the sync has run */
 ];
 
 const isTile = (u) => /(^|\.)tile\.openstreetmap\.org$/.test(u.hostname);

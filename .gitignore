@@ -4,6 +4,8 @@ PRIVAT-*.html
 privat-*.html
 # working plan doc — holds the cost model and the storno deadlines
 PLAN.md
+# handover/context doc — holds cost figures and the token location
+CONTEXT.md
 *.private.md
 .env
 *.token

@@ -32,6 +32,8 @@ assets/fonts/       Oswald + Work Sans, self-hosted woff2 (OFL)
 data/*.json         All content — the single source of truth
 photos/             Trip photos, YYYY-MM-DD/ — see photos/README.md
 tools/fotos.py      Rebuilds data/photos.json: web copies, thumbnails, EXIF
+tools/instagram.py  Pulls new posts from Instagram into photos/ — docs/INSTAGRAM.md
+.github/workflows/  instagram.yml: runs the sync twice a day and on demand
 ```
 
 ## Running it locally
@@ -80,6 +82,16 @@ own licence with attribution rendered in the footer and next to each photo. See
 
 The site is feature-complete. What remains is content: real photos, real logbook
 entries, and the awards on the way home.
+
+## Instagram
+
+The Galerie can pull from a trip Instagram account. GitHub Actions does the fetching, so
+the access token lives in an encrypted repository secret rather than in the page — this
+repo is public, and anything the page can read, so can everyone else. Photos are
+downloaded and committed rather than hotlinked: Instagram's media URLs expire, and
+committed files work offline and outlive the account.
+
+Setup, token handling and the failure modes: **`docs/INSTAGRAM.md`**.
 
 ## Offline
 

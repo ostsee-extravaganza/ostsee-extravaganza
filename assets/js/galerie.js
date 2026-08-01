@@ -28,9 +28,13 @@ function tile(item, idx) {
          loading="lazy" decoding="async"${item.w ? ` width="${item.w}" height="${item.h}"` : ''}>
   </button>
   ${
-    item.caption || item.credit
+    item.caption || item.credit || item.permalink
       ? `<figcaption class="tile__cap">${esc(item.caption)}${
           item.credit ? ` <span class="faint">· ${esc(item.credit)}</span>` : ''
+        }${
+          item.permalink
+            ? ` <a href="${esc(item.permalink)}" rel="noopener" class="faint">↗ IG</a>`
+            : ''
         }</figcaption>`
       : ''
   }
@@ -135,6 +139,21 @@ function wireLightbox() {
   }
 
   flat = doc.groups.flatMap((g) => g.items.filter((i) => i.type === 'photo'));
+
+  /* Instagram sync state, if the workflow has ever run */
+  try {
+    const ig = await loadJSON('instagram.json');
+    const bar = $('#ig-bar');
+    const when = ig.lastSync
+      ? new Date(ig.lastSync).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })
+      : 'noch nie';
+    $('#ig-status').innerHTML =
+      `@${esc(ig.username ?? '—')} · ${ig.seen?.length ?? 0} Beiträge geholt · zuletzt ${esc(when)}` +
+      ` · <span class="faint">läuft zweimal täglich von allein</span>`;
+    bar.hidden = false;
+  } catch {
+    /* no Instagram set up yet — the bar simply stays hidden */
+  }
 
   const ours = doc.groups.filter((g) => g.kind !== 'reference');
   const oursCount = ours.reduce((n, g) => n + g.items.length, 0);
