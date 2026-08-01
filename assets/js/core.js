@@ -13,6 +13,7 @@ export const PAGES = [
   { href: 'wetter.html', label: 'Wetter' },
   { href: 'packliste.html', label: 'Packliste' },
   { href: 'kilometer.html', label: 'Kilometer' },
+  { href: 'superlative.html', label: 'Superlative' },
 ];
 
 /* --- data ---------------------------------------------------------------- */
@@ -311,7 +312,43 @@ export async function mountChrome() {
   }
   document.body.insertAdjacentHTML('beforeend', footerHTML(credits));
   initReveal();
+  initOfflineBadge();
+  initServiceWorker();
   return { credits };
+}
+
+/* --- offline ------------------------------------------------------------- */
+
+/** Register the service worker. Silently does nothing on file:// or older browsers. */
+function initServiceWorker() {
+  if (!('serviceWorker' in navigator) || location.protocol === 'file:') return;
+  const go = () =>
+    navigator.serviceWorker.register('sw.js').catch((err) => {
+      console.warn('Service worker not registered:', err.message);
+    });
+  /* mountChrome awaits, so `load` has usually already fired by the time we get
+     here — hanging this on the event alone means it never runs. */
+  if (document.readyState === 'complete') go();
+  else window.addEventListener('load', go, { once: true });
+}
+
+/** A quiet bar when the network drops — Rügen has real holes in it. */
+function initOfflineBadge() {
+  const bar = document.createElement('div');
+  bar.className = 'offline-bar';
+  bar.setAttribute('role', 'status');
+  bar.hidden = true;
+  bar.innerHTML =
+    '<span class="offline-bar__dot" aria-hidden="true"></span>' +
+    'Offline — gespeicherte Seiten und Karten funktionieren weiter, Wetter nicht.';
+  document.body.append(bar);
+
+  const sync = () => {
+    bar.hidden = navigator.onLine;
+  };
+  addEventListener('online', sync);
+  addEventListener('offline', sync);
+  sync();
 }
 
 /** Show a friendly error in place of a section that failed to load. */

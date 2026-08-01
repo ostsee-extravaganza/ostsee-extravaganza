@@ -1,0 +1,23 @@
+{
+  "note": "Awards to fill in on the way home. Winners are saved in your own browser until they are committed here — pick them together on the train, that is rather the point.",
+  "opensAfter": "2026-09-08",
+  "awards": [
+    { "id": "strand", "title": "Bester Strand", "hint": "Weststrand, Prerow, Binz, Sellin — oder etwas, das wir noch nicht kennen.", "icon": "🏖" },
+    { "id": "fischbroetchen", "title": "Bestes Fischbrötchen", "hint": "Ort und Belag. Das ist eine ernste Kategorie.", "icon": "🐟" },
+    { "id": "kaffee", "title": "Schlimmster Kaffee", "hint": "Es wird einen geben.", "icon": "☕" },
+    { "id": "aussicht", "title": "Beste Aussicht", "hint": "Kap Arkona, Königsstuhl, das Dach vom Hausboot?", "icon": "🔭" },
+    { "id": "moment", "title": "Bester Moment", "hint": "Der eine, der hängen bleibt.", "icon": "✨" },
+    { "id": "unterschaetzt", "title": "Am meisten unterschätzt", "hint": "Das, worauf keiner Lust hatte und das dann super war.", "icon": "📈" },
+    { "id": "ueberschaetzt", "title": "Am meisten überschätzt", "hint": "Umgekehrt.", "icon": "📉" },
+    { "id": "fehler", "title": "Größter Planungsfehler", "hint": "Bitte ehrlich. Nächstes Mal wissen wir es besser.", "icon": "🤦" },
+    { "id": "kneipe", "title": "Beste Kneipe", "hint": "Binz zählt, auch wenn sich niemand erinnert.", "icon": "🍺" },
+    { "id": "wetter", "title": "Bester Wettertag", "hint": "Statistisch war ein Viertel nass. Welcher war es nicht?", "icon": "☀️" },
+    { "id": "essen", "title": "Bestes Essen", "hint": "Selbst gekocht zählt — die Küche in Zingst war der Grund für die Küche in Zingst.", "icon": "🍽" },
+    { "id": "kranich", "title": "Kranich-Moment", "hint": "Wie viele, wo, und war es die Kälte wert?", "icon": "🦩" }
+  ],
+  "prompts": [
+    { "id": "nochmal", "q": "Was würden wir genauso wieder machen?" },
+    { "id": "anders", "q": "Was würden wir anders machen?" },
+    { "id": "naechstes", "q": "Wo fahren wir das nächste Mal hin?" }
+  ]
+}

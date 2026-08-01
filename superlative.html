@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superlative — Ostsee Extravaganza</title>
+<meta name="description" content="Awards and closing numbers for the trip — best beach, worst coffee, and what the nine days actually added up to.">
+<meta name="theme-color" content="#10344c">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/motifs/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/worksans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+
+<link rel="canonical" href="https://ostsee-extravaganza.github.io/ostsee-extravaganza/superlative.html">
+<meta property="og:site_name" content="Ostsee Extravaganza">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://ostsee-extravaganza.github.io/ostsee-extravaganza/superlative.html">
+<meta property="og:title" content="Superlative — Ostsee Extravaganza">
+<meta property="og:description" content="Awards and closing numbers for the trip — best beach, worst coffee, and what the nine days actually added up to.">
+<meta property="og:image" content="https://ostsee-extravaganza.github.io/ostsee-extravaganza/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Seebrücke Sellin auf Rügen zur blauen Stunde, darüber der Schriftzug Ostsee Extravaganza.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap page-head__inner">
+      <p class="eyebrow">Superlative</p>
+      <h1>Die Auswertung</h1>
+      <p class="lede">Preise und Schlusszahlen. Auszufüllen im Zug nach Hause — sechseinhalb
+        Stunden Regionalbahn sind ungefähr die richtige Menge Zeit dafür.</p>
+      <dl class="page-head__facts" id="head-facts"></dl>
+    </div>
+  </header>
+
+  <div class="wave-band wave-band--from-navy"></div>
+
+  <!-- numbers -->
+  <section class="section section--tight" id="zahlen">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">In Zahlen</p>
+        <h2>Was neun Tage ergeben haben</h2>
+      </div>
+      <div class="grid grid--4" id="stats"></div>
+      <p class="xs faint mt-5" id="stats-note"></p>
+    </div>
+  </section>
+
+  <!-- awards -->
+  <section class="section section--alt" id="preise">
+    <div class="wrap">
+      <div class="cluster" style="justify-content:space-between">
+        <div>
+          <p class="eyebrow">Preisverleihung</p>
+          <h2>Die Kategorien</h2>
+        </div>
+        <div class="cluster">
+          <button class="btn btn--sm btn--ghost" id="btn-export" type="button">JSON kopieren</button>
+          <button class="btn btn--sm btn--ghost" id="btn-clear" type="button">Leeren</button>
+        </div>
+      </div>
+      <div class="grid grid--3 mt-5" id="awards"></div>
+    </div>
+  </section>
+
+  <div class="wave-band wave-band--from-alt"></div>
+
+  <!-- prompts -->
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <div class="section-head">
+        <p class="eyebrow">Zum Schluss</p>
+        <h2>Drei Fragen</h2>
+      </div>
+      <div class="stack" id="prompts"></div>
+      <p class="xs faint mt-6">Alles hier liegt nur in diesem Browser. Wer es behalten will,
+        kopiert das JSON und legt es zu <code>data/superlative.json</code>.</p>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="assets/js/superlative.js"></script>
+</body>
+</html>

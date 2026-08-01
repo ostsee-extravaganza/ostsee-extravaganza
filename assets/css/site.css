@@ -2657,3 +2657,73 @@ code {
   min-width: 4rem;
   text-align: right;
 }
+
+/* ============================================================================
+   26. Offline bar
+   ========================================================================= */
+
+.offline-bar {
+  position: fixed;
+  left: 50%;
+  bottom: var(--sp-4);
+  transform: translateX(-50%);
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  max-width: calc(100vw - 2 * var(--sp-4));
+  padding: 0.6rem 1rem;
+  background: var(--c-ink);
+  color: var(--c-cream);
+  border-radius: 999px;
+  box-shadow: var(--shadow-lg);
+  font-size: var(--fs-xs);
+  line-height: 1.35;
+}
+.offline-bar__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--c-mustard);
+  flex: none;
+}
+
+/* ============================================================================
+   27. Superlative
+   ========================================================================= */
+
+.award {
+  display: grid;
+  gap: var(--sp-2);
+  padding: var(--sp-5);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+.award.is-filled {
+  border-color: var(--c-mustard);
+  box-shadow: inset 0 0 0 1px var(--c-mustard), var(--shadow-sm);
+}
+.award__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.award__title {
+  font-family: var(--ff-display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.award__input {
+  font-family: var(--ff-display);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.award__hint {
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+  line-height: 1.45;
+}

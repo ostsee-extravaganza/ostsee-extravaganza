@@ -21,6 +21,8 @@ logbuch.html        Logbuch — short dated posts, light markdown bodies
 wetter.html         Wetter & Wasser — live forecast, Baltic sea temperature, September normals
 packliste.html      Packliste — checkable list, car-rental documents built in
 kilometer.html      Kilometerzähler — odometer and fuel log, real l/100 km and ct/km
+superlative.html    Superlative — post-trip awards and closing numbers
+sw.js               Service worker: offline pages, data and map tiles
 
 assets/css/site.css Design system: tokens, components, light + dark
 assets/js/core.js   Shared chrome, data loading, formatting
@@ -74,9 +76,22 @@ own licence with attribution rendered in the footer and next to each photo. See
    and 2015–2025 normals for the trip window precomputed into data/klima.json
 6. ✅ Packliste + Kilometerzähler — 53-item list with critical-document flagging
    and per-person filtering; fuel log deriving real consumption and cost per km
-7. ◻︎ Service worker, OG image, Superlative
+7. ✅ Service worker, OG image, Superlative
 
-Every page in the navigation is now built.
+The site is feature-complete. What remains is content: real photos, real logbook
+entries, and the awards on the way home.
+
+## Offline
+
+`sw.js` precaches all ten pages, every data file, the CSS, the fonts and Leaflet,
+so the site opens cold with no network. Map tiles you have already looked at are
+kept too, capped at 400 so the cache cannot grow without bound. Pages and data use
+network-first, so an online visit always sees the current site and the cache only
+steps in when the network does not answer. Verified by killing the dev server and
+loading every page and every JSON file from cache alone.
+
+Bump `VERSION` in `sw.js` when the precache list changes; the old caches are
+dropped on activate.
 
 
 
